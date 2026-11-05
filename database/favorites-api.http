@@ -1,0 +1,38 @@
+# Supabase automatically provides these REST endpoints for public.favorites.
+# Supply an authenticated user's access token and UUID. Never use a service-role key.
+@baseUrl = https://ebbpsmoxgwulvhpectap.supabase.co/rest/v1
+@publishableKey = sb_publishable_Lb6McXMG6h-KmnobZY4ZXw_xecNl211
+@accessToken = REPLACE_WITH_CURRENT_USER_ACCESS_TOKEN
+@userId = REPLACE_WITH_CURRENT_USER_UUID
+
+### GET: current user's favorites (RLS enforces ownership), newest first, page size 100
+GET {{baseUrl}}/favorites?select=recipe_key,recipe,created_at&order=created_at.desc,recipe_key.asc&limit=100&offset=0
+apikey: {{publishableKey}}
+Authorization: Bearer {{accessToken}}
+
+### POST: add a favorite; duplicate keys are ignored (idempotent add)
+POST {{baseUrl}}/favorites?on_conflict=user_id,recipe_key
+apikey: {{publishableKey}}
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+Prefer: resolution=ignore-duplicates,return=minimal
+
+{
+  "user_id": "{{userId}}",
+  "recipe_key": "recipe:28",
+  "recipe": {
+    "id": 28,
+    "name": "새우 두부 계란찜",
+    "category": "반찬",
+    "method": "찌기",
+    "seasonal": ["두부", "달걀"],
+    "months": [3, 6],
+    "main_ingredients": ["연두부", "칵테일새우", "달걀"]
+  }
+}
+
+### DELETE: remove one favorite from the authenticated user's collection
+DELETE {{baseUrl}}/favorites?user_id=eq.{{userId}}&recipe_key=eq.recipe%3A28
+apikey: {{publishableKey}}
+Authorization: Bearer {{accessToken}}
+Prefer: return=minimal
