@@ -18,10 +18,24 @@
     @media(prefers-reduced-motion:reduce){*{transition:none!important}}
     [hidden]{display:none!important}.questionnaire{background:#fffdf7;border:1px solid var(--line);border-radius:22px;padding:28px;margin:0 0 32px}.question-top{display:flex;justify-content:space-between;gap:12px;align-items:center}.question-top h2{font-size:22px;margin:0}.progress{font-size:13px;color:var(--green)}.questions{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:24px 0}.questions fieldset{border:0;margin:0;padding:0;min-width:0}.questions legend{font-weight:700;margin-bottom:12px}.choices{display:flex;flex-wrap:wrap;gap:8px}.choice{position:relative}.choice input{position:absolute;opacity:0;width:1px;height:1px}.choice span{display:block;border:1px solid var(--line);border-radius:12px;padding:9px 13px;background:white;font-size:14px;cursor:pointer}.choice input:checked+span{background:var(--green);color:white;border-color:var(--green)}.choice input:focus-visible+span{outline:3px solid #ba790c;outline-offset:3px}.fridge-input{margin-top:12px}.fridge-input label{font-size:13px;display:block;margin-bottom:6px}.fridge-input input{font:inherit;border:1px solid #b8c4ae;border-radius:9px;padding:11px;width:100%;background:white}.hint{font-size:12px;color:var(--muted);margin:8px 0}.actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.primary{border:0;border-radius:12px;padding:13px 24px;background:var(--green);color:white;font:inherit;font-weight:700;cursor:pointer}.secondary{border:0;background:transparent;color:var(--muted);text-decoration:underline;padding:10px;cursor:pointer}.feedback{color:var(--green);font-size:14px;margin:14px 0 0}.recommendation-note{color:var(--muted);font-size:13px;margin:-10px 0 22px}.hero{padding-top:36px;padding-bottom:26px}h1{font-size:clamp(30px,3.8vw,43px)}@media(max-width:650px){.questions{grid-template-columns:1fr;gap:22px}.questionnaire{padding:22px 18px}.question-top h2{font-size:19px}.choice span{font-size:13px}.question-top{align-items:flex-start}}
     .data-summary{font-size:13px;color:var(--muted);margin:16px 0 0}.supplement-notice{background:#eef2df;border:1px solid #ccd6b3;border-radius:16px;padding:22px;margin-bottom:24px}.supplement-notice h2{font-size:19px;margin:0 0 8px}.supplement-notice p{margin:7px 0;font-size:14px}.sources{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:12px;font-size:12px}.sources a{color:var(--green)}.suggestion-label{background:#e6edba;color:var(--green);font-size:11px;padding:4px 8px;border-radius:5px;display:inline-block;margin-left:8px}.supplement-card{border-color:#bacb99}.supplement-card .photo{background:linear-gradient(130deg,#edf1df,#f7f6e7)}.supplement-card .photo .fallback{font-size:17px;font-weight:700}.supplement-info{font-size:13px;line-height:1.7}.supplement-info strong{display:block;margin-top:12px}.supplement-info p{margin:4px 0;color:#53604f}.audit{margin-top:12px;font-size:12px}.audit ul{padding-left:20px}
+    .header-controls{display:flex;gap:18px;align-items:center;justify-content:flex-end;flex-wrap:wrap}.auth-controls{display:flex;gap:10px;align-items:center}.auth-button{border:1px solid var(--green);border-radius:10px;background:var(--green);color:#fff;padding:9px 16px;font:inherit;font-size:14px;cursor:pointer}.auth-email{font-size:12px;color:var(--green);max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.auth-status{font-size:12px;color:var(--muted);max-width:280px}.auth-dialog{width:min(440px,calc(100% - 32px));border:1px solid var(--line);border-radius:22px;background:#fffdf7;padding:28px;color:var(--ink);box-shadow:0 24px 90px #18322233;max-height:90vh;overflow-y:auto}.auth-dialog::backdrop{background:#14251c80}.auth-dialog h2{margin:10px 0 8px;font-size:25px;letter-spacing:-1px}.auth-dialog p{font-size:14px;color:var(--muted)}.auth-dialog .close-auth{float:right;background:transparent;border:0;color:var(--muted);font-size:24px;line-height:1;padding:5px;cursor:pointer}.auth-form{display:grid;gap:12px;margin-top:22px}.auth-form label{font-size:14px;font-weight:700}.auth-form input{display:block;width:100%;border:1px solid #c2cdb9;background:#fff;border-radius:10px;padding:12px;margin-top:6px;font:inherit}.auth-form input:focus-visible{outline:3px solid #ba790c;outline-offset:2px}.auth-form .primary{margin-top:5px}.auth-message{min-height:24px;font-size:13px!important;overflow-wrap:anywhere}.auth-message[data-error="true"]{color:#9c3828}.auth-switch{width:100%;font:inherit;font-size:13px}.auth-status:empty{display:none}@media(max-width:650px){.top{padding-top:14px;padding-bottom:14px;align-items:flex-start}.header-controls{gap:10px}.auth-email{max-width:140px}.auth-dialog{padding:23px}.month-control label{display:none}.auth-button{padding:8px 13px}}
   </style>
 </head>
 <body>
-  <header><div class="wrap top"><div class="brand">오늘 <span>뭐먹지?</span></div><div class="month-control"><label for="month">계절을 골라요</label><select id="month" disabled></select></div></div></header>
+  <header><div class="wrap top"><div class="brand">오늘 <span>뭐먹지?</span></div><div class="header-controls"><div class="month-control"><label for="month">계절을 골라요</label><select id="month" aria-label="계절을 골라요" disabled></select></div><div class="auth-controls"><span class="auth-email" id="auth-user-email" hidden></span><button class="auth-button" id="login-button" type="button">로그인</button><button class="auth-button" id="logout-button" type="button" hidden>로그아웃</button></div><span class="auth-status" id="auth-status" role="status" aria-live="polite"></span></div></div></header>
+  <dialog class="auth-dialog" id="auth-dialog" aria-labelledby="auth-title" aria-describedby="auth-description">
+    <button class="close-auth" id="close-auth" type="button" aria-label="로그인 창 닫기">×</button>
+    <div class="eyebrow">MY SEASONAL TABLE</div>
+    <h2 id="auth-title">다시 만나 반가워요 🥄</h2>
+    <p id="auth-description">이메일로 로그인하고 오늘의 한 끼를 골라봐요.</p>
+    <form class="auth-form" id="auth-form">
+      <label for="auth-email">이메일<input id="auth-email" type="email" autocomplete="email" required maxlength="254" placeholder="you@example.com"></label>
+      <label for="auth-password">비밀번호<input id="auth-password" type="password" autocomplete="current-password" required maxlength="128" placeholder="비밀번호를 입력해 주세요"></label>
+      <button class="primary" id="auth-submit" type="submit">로그인</button>
+    </form>
+    <p class="auth-message" id="auth-message" role="status" aria-live="polite"></p>
+    <button class="secondary auth-switch" id="auth-switch" type="button">처음이신가요? 회원가입하기</button>
+  </dialog>
   <main class="wrap">
     <section class="hero" aria-labelledby="hero-title"><div><div class="eyebrow">SEASONAL TABLE · 제철 식탁</div><h1 id="hero-title">오늘은 어떤 한 끼가<br><em>당기세요?</em></h1><p class="intro"><span id="hero-month"></span> 제철 재료에 내 취향 한 스푼. 네 가지만 고르면 함께 찾아드릴게요.</p></div><div class="season-stamp" aria-hidden="true"><small>IN SEASON</small><strong id="stamp-month"></strong><small>제철의 맛</small></div></section>
     <form id="preferences" class="questionnaire" aria-labelledby="question-title">
@@ -39,6 +53,7 @@
     </div>
   </main>
   <footer><div class="wrap footer-inner"><span>오늘 뭐먹지? · 계절을 담은 작은 식탁</span><span>등록 레시피·사진: menu.json / 식품안전나라 · 추가 제안: 서비스 구성</span></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.0/dist/umd/supabase.js" integrity="sha384-uteMfOloLDGt042uDz+xHGF3ym63/WQ6rFq7murQRG8Ih7QrXGEGNtWd8688sb4O" crossorigin="anonymous" defer></script>
   <script>
     'use strict';
     const monthSelect = document.getElementById('month');
@@ -363,6 +378,150 @@
       }
     }
     loadMenu();
+  </script>
+  <script>
+    // Frontend publishable key only. Supabase handles passwords and sessions.
+    const SUPABASE_URL = 'https://ebbpsmoxgwulvhpectap.supabase.co';
+    const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_Lb6McXMG6h-KmnobZY4ZXw_xecNl211';
+    const authDialog = document.getElementById('auth-dialog');
+    const authForm = document.getElementById('auth-form');
+    const authPassword = document.getElementById('auth-password');
+    const authMessage = document.getElementById('auth-message');
+    const authSubmit = document.getElementById('auth-submit');
+    const authSwitch = document.getElementById('auth-switch');
+    const loginButton = document.getElementById('login-button');
+    const logoutButton = document.getElementById('logout-button');
+    let authClient = null;
+    let authMode = 'login';
+    let authBusy = false;
+    let authRevision = 0;
+    function showAuthMessage(text, error = false) {
+      authMessage.textContent = text;
+      authMessage.dataset.error = String(error);
+    }
+    function setAuthMode(mode) {
+      authMode = mode;
+      const signup = mode === 'signup';
+      document.getElementById('auth-title').textContent = signup ? '제철 식탁에 오신 걸 환영해요 🌿' : '다시 만나 반가워요 🥄';
+      document.getElementById('auth-description').textContent = signup ? '이메일과 비밀번호로 간편하게 가입해요. 가입 후 확인 메일을 열어주세요.' : '이메일로 로그인하고 오늘의 한 끼를 골라봐요.';
+      authSubmit.textContent = signup ? '회원가입' : '로그인';
+      authSwitch.textContent = signup ? '이미 계정이 있나요? 로그인하기' : '처음이신가요? 회원가입하기';
+      authPassword.autocomplete = signup ? 'new-password' : 'current-password';
+      authPassword.minLength = signup ? 8 : 1;
+      authPassword.placeholder = signup ? '8자 이상으로 만들어 주세요' : '비밀번호를 입력해 주세요';
+      authPassword.value = '';
+      showAuthMessage('');
+    }
+    function setAuthBusy(busy) {
+      authBusy = busy;
+      authSubmit.disabled = busy;
+      authSwitch.disabled = busy;
+      document.getElementById('auth-email').disabled = busy;
+      authPassword.disabled = busy;
+      authForm.setAttribute('aria-busy', String(busy));
+      authSubmit.textContent = busy ? '잠시만 기다려주세요…' : authMode === 'signup' ? '회원가입' : '로그인';
+    }
+    function renderAuthSession(session) {
+      const user = session?.user;
+      const email = document.getElementById('auth-user-email');
+      email.textContent = user?.email || '';
+      email.title = user?.email || '';
+      email.hidden = !user;
+      loginButton.hidden = Boolean(user);
+      logoutButton.hidden = !user;
+      if (user && authDialog.open) authDialog.close();
+    }
+    function authErrorMessage(error) {
+      const messages = {
+        invalid_credentials: '이메일과 비밀번호를 다시 확인해 주세요.',
+        email_not_confirmed: '가입할 때 받은 이메일에서 확인을 마친 뒤 로그인해 주세요.',
+        email_address_invalid: '이메일 주소를 다시 확인해 주세요.',
+        email_address_not_authorized: '가입 메일 발송 설정을 확인하고 다시 시도해 주세요.',
+        signup_disabled: '회원가입 설정을 확인 중이에요. 기존 계정으로 로그인해 주세요.',
+        weak_password: '조금 더 긴 비밀번호에 영문·숫자·기호를 섞어주세요.',
+        user_already_exists: '가입 안내를 확인하거나 로그인으로 이어가 주세요.',
+        over_email_send_rate_limit: '메일을 보낸 지 얼마 되지 않았어요. 잠시 후 다시 시도해 주세요.',
+        over_request_rate_limit: '잠시 쉬었다가 다시 시도해 주세요.'
+      };
+      return messages[error?.code] || '연결을 확인하고 다시 시도해 주세요. 메뉴는 계속 둘러볼 수 있어요.';
+    }
+    async function initializeAuth() {
+      if (authClient) return true;
+      if (!window.supabase?.createClient) {
+        showAuthMessage('로그인 연결을 준비하고 있어요. 연결을 확인하고 페이지를 새로고침해 주세요.', true);
+        return false;
+      }
+      try {
+        authClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
+          auth: {persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}
+        });
+        authClient.auth.onAuthStateChange((event, session) => {
+          authRevision++;
+          renderAuthSession(session);
+          if (event === 'SIGNED_IN') document.getElementById('auth-status').textContent = '반가워요! 오늘의 한 끼를 골라봐요.';
+          if (event === 'SIGNED_OUT') document.getElementById('auth-status').textContent = '다음 식탁에서 또 만나요!';
+        });
+        const revision = authRevision;
+        const {data:sessionData,error} = await authClient.auth.getSession();
+        if (error) {
+          document.getElementById('auth-status').textContent = '이메일로 다시 로그인해 주세요.';
+          return true;
+        }
+        if (revision === authRevision) renderAuthSession(sessionData.session);
+        return true;
+      } catch (error) {
+        authClient = null;
+        showAuthMessage(authErrorMessage(error), true);
+        return false;
+      }
+    }
+    loginButton.addEventListener('click', () => {
+      if (!authBusy) setAuthMode('login');
+      if (!authDialog.open) authDialog.showModal();
+      document.getElementById('auth-email').focus();
+    });
+    document.getElementById('close-auth').addEventListener('click', () => authDialog.close());
+    authDialog.addEventListener('close', () => { authPassword.value = ''; });
+    authSwitch.addEventListener('click', () => { if (!authBusy) setAuthMode(authMode === 'login' ? 'signup' : 'login'); });
+    authForm.addEventListener('submit', async event => {
+      event.preventDefault();
+      if (authBusy || !authForm.reportValidity()) return;
+      const email = document.getElementById('auth-email').value.trim();
+      const password = authPassword.value;
+      const mode = authMode;
+      setAuthBusy(true);
+      showAuthMessage('');
+      try {
+        if (!await initializeAuth()) return;
+        const result = mode === 'signup'
+          ? await authClient.auth.signUp({email,password,options:{emailRedirectTo:location.origin+location.pathname}})
+          : await authClient.auth.signInWithPassword({email,password});
+        if (result.error) throw result.error;
+        authPassword.value = '';
+        if (result.data.session) {
+          renderAuthSession(result.data.session);
+          document.getElementById('auth-status').textContent = '반가워요! 오늘의 한 끼를 골라봐요.';
+        } else if (mode === 'signup') {
+          setAuthMode('login');
+          showAuthMessage('가입 안내를 확인해 주세요! 이메일로 받은 확인 링크를 연 뒤, 이 화면에서 로그인해 주세요. 이미 가입했다면 바로 로그인할 수 있어요.');
+        } else showAuthMessage('이메일 확인을 마친 뒤 다시 로그인해 주세요.');
+      } catch (error) {
+        showAuthMessage(authErrorMessage(error), true);
+      } finally { setAuthBusy(false); }
+    });
+    logoutButton.addEventListener('click', async () => {
+      if (!authClient || logoutButton.disabled) return;
+      logoutButton.disabled = true;
+      try {
+        const {error} = await authClient.auth.signOut({scope:'local'});
+        if (error) throw error;
+        renderAuthSession(null);
+        document.getElementById('auth-status').textContent = '다음 식탁에서 또 만나요!';
+      } catch (error) {
+        document.getElementById('auth-status').textContent = '연결을 확인하고 로그아웃을 다시 눌러주세요.';
+      } finally { logoutButton.disabled = false; }
+    });
+    window.addEventListener('DOMContentLoaded', initializeAuth, {once:true});
   </script>
 </body>
 </html>
