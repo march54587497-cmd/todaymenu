@@ -36,3 +36,32 @@ DELETE {{baseUrl}}/favorites?user_id=eq.{{userId}}&recipe_key=eq.recipe%3A28
 apikey: {{publishableKey}}
 Authorization: Bearer {{accessToken}}
 Prefer: return=minimal
+
+### GET: current user's folder names
+GET {{baseUrl}}/favorite_folders?select=id,name&order=name.asc&limit=100&offset=0
+apikey: {{publishableKey}}
+Authorization: Bearer {{accessToken}}
+
+### POST: create a named folder; same-name duplicates are ignored
+POST {{baseUrl}}/favorite_folders?on_conflict=user_id,name
+apikey: {{publishableKey}}
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+Prefer: resolution=ignore-duplicates,return=representation
+
+{
+  "user_id": "{{userId}}",
+  "name": "주말 특식"
+}
+
+### PATCH: classify an existing favorite into an owned folder (or null for unfiled)
+# Replace folder_id with an id returned by GET /favorite_folders.
+PATCH {{baseUrl}}/favorites?user_id=eq.{{userId}}&recipe_key=eq.recipe%3A28&select=recipe_key
+apikey: {{publishableKey}}
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+Prefer: return=representation
+
+{
+  "folder_id": null
+}
