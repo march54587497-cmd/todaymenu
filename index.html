@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#28583e">
-  <meta name="description" content="이달의 제철 재료로 찾아보는 오늘의 메뉴와 레시피">
+  <meta name="description" content="제철 메뉴를 추천받고, 즐겨찾기 폴더에 담고, 스마트 장보기 목록까지 준비하는 나의 푸드 코디네이터">
   <title>오늘 뭐먹지? · 제철 식탁</title>
   <style>
     :root{--green:#28583e;--ink:#24382b;--muted:#687266;--line:#e0e5d9;--paper:#f8f9f3;--lime:#e6edba}
@@ -20,6 +20,7 @@
     .data-summary{font-size:13px;color:var(--muted);margin:16px 0 0}.supplement-notice{background:#eef2df;border:1px solid #ccd6b3;border-radius:16px;padding:22px;margin-bottom:24px}.supplement-notice h2{font-size:19px;margin:0 0 8px}.supplement-notice p{margin:7px 0;font-size:14px}.sources{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:12px;font-size:12px}.sources a{color:var(--green)}.suggestion-label{background:#e6edba;color:var(--green);font-size:11px;padding:4px 8px;border-radius:5px;display:inline-block;margin-left:8px}.supplement-card{border-color:#bacb99}.supplement-card .photo{background:linear-gradient(130deg,#edf1df,#f7f6e7)}.supplement-card .photo .fallback{font-size:17px;font-weight:700}.supplement-info{font-size:13px;line-height:1.7}.supplement-info strong{display:block;margin-top:12px}.supplement-info p{margin:4px 0;color:#53604f}.audit{margin-top:12px;font-size:12px}.audit ul{padding-left:20px}
     .header-controls{display:flex;gap:18px;align-items:center;justify-content:flex-end;flex-wrap:wrap}.auth-controls{display:flex;gap:10px;align-items:center}.auth-button{border:1px solid var(--green);border-radius:10px;background:var(--green);color:#fff;padding:9px 16px;font:inherit;font-size:14px;cursor:pointer}.auth-email{font-size:12px;color:var(--green);max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.auth-status{font-size:12px;color:var(--muted);max-width:280px}.auth-dialog{width:min(440px,calc(100% - 32px));border:1px solid var(--line);border-radius:22px;background:#fffdf7;padding:28px;color:var(--ink);box-shadow:0 24px 90px #18322233;max-height:90vh;overflow-y:auto}.auth-dialog::backdrop{background:#14251c80}.auth-dialog h2{margin:10px 0 8px;font-size:25px;letter-spacing:-1px}.auth-dialog p{font-size:14px;color:var(--muted)}.auth-dialog .close-auth{float:right;background:transparent;border:0;color:var(--muted);font-size:24px;line-height:1;padding:5px;cursor:pointer}.auth-form{display:grid;gap:12px;margin-top:22px}.auth-form label{font-size:14px;font-weight:700}.auth-form input{display:block;width:100%;border:1px solid #c2cdb9;background:#fff;border-radius:10px;padding:12px;margin-top:6px;font:inherit}.auth-form input:focus-visible{outline:3px solid #ba790c;outline-offset:2px}.auth-form .primary{margin-top:5px}.auth-message{min-height:24px;font-size:13px!important;overflow-wrap:anywhere}.auth-message[data-error="true"]{color:#9c3828}.auth-switch{width:100%;font:inherit;font-size:13px}.auth-status:empty{display:none}@media(max-width:650px){.top{padding-top:14px;padding-bottom:14px;align-items:flex-start}.header-controls{gap:10px}.auth-email{max-width:140px}.auth-dialog{padding:23px}.month-control label{display:none}.auth-button{padding:8px 13px}}
     .view-nav{display:flex;gap:9px;margin-top:20px;flex-wrap:wrap}.view-tab{border:1px solid var(--line);background:#fffdf7;color:var(--green);border-radius:100px;padding:9px 18px;font:inherit;font-size:14px;cursor:pointer}.view-tab[aria-pressed="true"]{background:var(--green);color:white;border-color:var(--green)}.favorite-button{position:absolute;top:12px;right:12px;z-index:1;border:1px solid #d8dfcf;border-radius:50%;width:43px;height:43px;background:#fffdf7ef;color:#53634f;font-size:25px;line-height:1;box-shadow:0 2px 8px #19362214;cursor:pointer;display:grid;place-items:center}.favorite-button[aria-pressed="true"]{color:#b3454a;background:#fff5f2;border-color:#e5b8b3}.favorite-button:disabled{cursor:wait;opacity:.7}.favorites-status{font-size:13px;color:var(--green);margin:12px 0 0;min-height:21px}.favorites-view{padding-top:30px}.favorites-view h1{font-size:32px;margin:0 0 12px}.favorites-help{color:var(--muted);font-size:14px;margin-bottom:20px}.library-heading{display:flex;justify-content:space-between;align-items:center;gap:16px}.library-count{font-size:14px;color:var(--muted);white-space:nowrap}.library-controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:20px}.library-controls .primary{font-size:13px;padding:9px 14px}.view-tab:focus-visible,.favorite-button:focus-visible{outline:3px solid #ba790c;outline-offset:3px}
+    .folder-tools{background:#fffdf7;border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:20px}.folder-tools label,.saved-controls label{font-size:13px;font-weight:700}.folder-tools select,.saved-controls select,.folder-tools input{font:inherit;font-size:14px;padding:8px 10px;border:1px solid #cad5bf;border-radius:8px;background:white;max-width:100%;color:var(--ink)}.folder-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.folder-create{display:flex;gap:8px;margin:12px 0;flex-wrap:wrap}.folder-create input{flex:1;min-width:160px}.folder-create button{font-size:13px;padding:8px 14px}.folder-examples{font-size:12px;color:var(--muted);margin:8px 0 0}.saved-controls{margin-top:15px;border-top:1px solid var(--line);padding-top:13px;display:grid;gap:12px}.shopping-select{display:flex;gap:8px;align-items:center;font-size:13px}.shopping-select input,.shopping-item input{width:18px;height:18px;accent-color:var(--green);flex-shrink:0}.shopping-panel{background:#fffdf7;border:1px solid #c8d5b6;border-radius:18px;padding:24px;margin-bottom:26px}.shopping-panel h2{margin:0;font-size:23px}.shopping-panel h3{font-size:15px;margin:20px 0 8px}.shopping-item{display:flex;align-items:flex-start;gap:10px;border-bottom:1px solid #e8ecdf;padding:12px 0;cursor:pointer}.shopping-item:has(input:checked) .ingredient-name{text-decoration:line-through;color:var(--muted)}.shopping-item small{display:block;color:var(--muted);font-size:12px}.shopping-panel textarea{font:inherit;width:100%;min-height:180px;margin-top:14px;border:1px solid var(--line);padding:12px;border-radius:10px}.shopping-panel .hint{font-size:13px}.shopping-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:16px 0}.shopping-source{font-size:12px;color:var(--muted)}.shopping-source p{white-space:pre-line}.shopping-status{font-size:13px;color:var(--green)}
   </style>
 </head>
 <body>
@@ -44,10 +45,12 @@
       <div class="library-heading"><h1 id="favorites-title" tabindex="-1">나의 즐겨찾기 ♥</h1><span class="library-count" id="favorites-count"></span></div>
       <p class="favorites-help" id="favorites-help">마음에 드는 한 끼를 이 브라우저에 모아봐요.</p>
       <div class="library-controls"><button class="secondary" id="favorites-retry" type="button" hidden>계정 보관함 다시 연결하기</button><button class="primary" id="favorites-import" type="button" hidden>이 브라우저의 메뉴를 계정에 옮기기</button></div>
+      <div class="folder-tools"><div class="folder-row"><label for="folder-filter">📁 폴더별로 꺼내보기</label><select id="folder-filter"><option value="all">모든 메뉴</option><option value="unfiled">미분류</option></select><button class="primary" id="shopping-build" type="button">🛒 장보기 리스트 만들기</button></div><form class="folder-create" id="folder-create"><input id="folder-name" aria-label="새 즐겨찾기 폴더 이름" maxlength="40" required placeholder="예: 🥗 다이어트 식단, 주말 특식, 아이반찬"><button class="primary" id="folder-create-button" type="submit">폴더 만들기</button></form><p class="folder-examples">원하는 이름으로 폴더를 만들고 카드에서 분류해요. 폴더 이름은 분류용이며 영양 평가를 뜻하지 않아요.</p><p class="hint" id="shopping-selection-summary">장볼 메뉴를 카드에서 골라주세요. 선택하지 않으면 현재 폴더의 메뉴를 모두 모아요.</p></div>
+      <section class="shopping-panel" id="shopping-panel" aria-labelledby="shopping-title" hidden><h2 id="shopping-title" tabindex="-1">스마트 장보기 리스트 🛒</h2><p class="hint" id="shopping-intro"></p><p class="hint">주재료를 빠짐없이 모아 같은 재료는 합쳤어요. 분량·양념은 아래 레시피별 재료에서 확인해 주세요. 천연 조미료와 과일즙·향채를 활용하고 소금·간장은 맛을 본 뒤 조금씩 더해요.</p><div class="shopping-actions"><button class="primary" id="shopping-copy" type="button">목록 복사하기</button><span class="shopping-status" id="shopping-status" role="status" aria-live="polite"></span></div><div id="shopping-items"></div><textarea id="shopping-export" aria-label="복사용 장보기 목록" readonly hidden></textarea><details class="shopping-source"><summary>레시피별 전체 재료·분량 확인하기</summary><div id="shopping-sources"></div></details></section>
       <div class="grid" id="favorites-grid"></div>
     </section>
     <div id="menu-view">
-    <section class="hero" aria-labelledby="hero-title"><div><div class="eyebrow">SEASONAL TABLE · 제철 식탁</div><h1 id="hero-title">오늘은 어떤 한 끼가<br><em>당기세요?</em></h1><p class="intro"><span id="hero-month"></span> 제철 재료에 내 취향 한 스푼. 네 가지만 고르면 함께 찾아드릴게요.</p></div><div class="season-stamp" aria-hidden="true"><small>IN SEASON</small><strong id="stamp-month"></strong><small>제철의 맛</small></div></section>
+    <section class="hero" aria-labelledby="hero-title"><div><div class="eyebrow">SEASONAL TABLE · 나의 푸드 코디네이터</div><h1 id="hero-title">오늘은 어떤 한 끼가<br><em>당기세요?</em></h1><p class="intro"><span id="hero-month"></span> 제철 재료에 내 취향 한 스푼. 메뉴를 고르고, 하트에 담고, 장보기까지 함께해요.</p></div><div class="season-stamp" aria-hidden="true"><small>IN SEASON</small><strong id="stamp-month"></strong><small>제철의 맛</small></div></section>
     <form id="preferences" class="questionnaire" aria-labelledby="question-title">
       <div class="question-top"><h2 id="question-title">딱 내 입맛을 찾아볼까요? 🥄</h2><span class="progress" id="progress" role="status" aria-live="polite">0 / 4 선택했어요</span></div>
       <div class="questions" id="questions"></div>
@@ -175,10 +178,12 @@
       ['표고버섯','고구마'],['연근','호박'],['무','배추'],['브로콜리','시금치']
     ];
     const substitutionGroups = [
-      {names:['시금치','봄동','배추','양배추','상추','열무','청경채','케일','근대'],reason:'잎채소의 식감과 조리 용도'},
-      {names:['무','당근','연근','우엉','감자','고구마','단호박','호박'],reason:'익혔을 때의 식감과 조리 용도'},
+      {names:['시금치','봄동','배추','양배추','상추','열무','청경채','케일','근대'],reason:'잎채소 식품군과 식감·조리 용도'},
+      {names:['무','당근','연근','우엉'],reason:'뿌리채소 식품군과 익혔을 때의 식감'},
+      {names:['감자','고구마','단호박'],reason:'전분을 포함한 채소의 식사 역할과 조리 용도'},
+      {names:['두부','달걀','닭고기','소고기','돼지고기','오리고기','생선'],reason:'단백질 식품군과 조리 용도'},
       {names:['냉이','달래','미나리','두릅','쑥','참나물','깻잎'],reason:'향을 더하는 조리 용도'},
-      {names:['가지','애호박','오이','토마토'],reason:'수분감과 채소 반찬 용도'},
+      {names:['가지','애호박','호박','오이','토마토'],reason:'수분감과 채소 반찬 용도'},
       {names:['표고버섯','팽이버섯','느타리버섯','새송이버섯','양송이버섯'],reason:'버섯의 식감과 감칠맛'}
     ];
     function basicSeasonalRecipes(month, ingredients) {
@@ -210,7 +215,7 @@
           if (key === 'fridge') {
             for (const requested of fridgeItems()) {
               const group = substitutionGroups.find(item=>item.names.includes(requested));
-              const replacement = group && recipe.seasonal.find(name=>group.names.includes(name));
+              const replacement = group && [...recipe.seasonal,...recipe.main_ingredients].find(name=>group.names.includes(name));
               if (replacement) notes.push('대체 재료: '+requested+' → '+replacement+' ('+group.reason+' 기준). 영양 성분이 같다는 뜻은 아니에요.');
             }
             notes.push('장보기 제안: '+recipe.main_ingredients.join(', ')+'를 준비해요. 입력한 냉장고 재료를 쓴 메뉴와는 구분해 드려요.');
@@ -222,7 +227,7 @@
       }
       if (selectedIngredient && !recipe.seasonal.includes(selectedIngredient)) {
         const group = substitutionGroups.find(item => item.names.includes(selectedIngredient));
-        const replacement = group && recipe.seasonal.find(name => group.names.includes(name));
+        const replacement = group && [...recipe.seasonal,...recipe.main_ingredients].find(name => group.names.includes(name));
         notes.unshift(replacement ? '대체 재료: '+selectedIngredient+' → '+replacement+' ('+group.reason+' 기준). 영양 성분이 같다는 뜻은 아니에요.' : '제철 재료 대안: '+selectedIngredient+' 대신 '+recipe.seasonal.join('·')+'를 주재료로 골랐어요.');
       }
       return notes;
@@ -390,7 +395,13 @@
       }
     }
     const GUEST_FAVORITES_KEY = 'todaymenu.guest-favorites.v1';
+    const GUEST_FOLDERS_KEY = 'todaymenu.guest-folders.v1';
     let favoriteEntries = new Map();
+    let favoriteFolders = new Map();
+    let favoriteFolderFilter = 'all';
+    let favoriteFolderBusy = false;
+    const shoppingSelected = new Set();
+    const shoppingChecked = new Set();
     let favoriteUserId = null;
     let favoriteEpoch = 0;
     let favoriteLoading = false;
@@ -421,7 +432,14 @@
       const key = entry?.key || entry?.recipe_key;
       const recipe = favoriteSnapshot(entry?.recipe);
       if (typeof key !== 'string' || !/^(recipe|suggestion):/.test(key) || key.length>512 || !recipe) return null;
-      return {key,recipe,created_at:typeof entry.created_at === 'string' ? entry.created_at : new Date().toISOString()};
+      return {key,recipe,folder_id:validFolderId(entry.folder_id) ? entry.folder_id : null,created_at:typeof entry.created_at === 'string' ? entry.created_at : new Date().toISOString()};
+    }
+    function validFolderId(value) { return typeof value === 'string' && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(value); }
+    function readGuestFolders() {
+      try {
+        const rows = JSON.parse(localStorage.getItem(GUEST_FOLDERS_KEY) || '[]');
+        return new Map((Array.isArray(rows) ? rows : []).filter(row=>validFolderId(row?.id) && typeof row.name==='string' && row.name.trim() && row.name.length<=40).map(row=>[row.id,{id:row.id,name:row.name}]));
+      } catch (error) { return new Map(); }
     }
     function favoriteMessage(text) { document.getElementById('favorites-status').textContent = text; }
     function readGuestFavorites() {
@@ -448,7 +466,7 @@
       button.setAttribute('aria-pressed',String(saved));
       const label = button.dataset.recipeName + (saved ? ' 즐겨찾기 해제' : ' 즐겨찾기 추가');
       button.setAttribute('aria-label',label); button.title = label;
-      button.disabled = favoritePending.has(button.dataset.favoriteKey) || favoriteLoading || favoriteLoadError || favoriteImporting;
+      button.disabled = favoritePending.has(button.dataset.favoriteKey) || favoriteLoading || favoriteLoadError || favoriteImporting || favoriteFolderBusy;
     }
     function setFavoritesView(showFavorites) {
       document.getElementById('favorites-view').hidden = !showFavorites;
@@ -463,13 +481,14 @@
       const focusWasInLibrary = focusedKey && grid.contains(document.activeElement);
       grid.replaceChildren();
       document.getElementById('favorites-count').textContent = favoriteLoading ? '차곡차곡 모으는 중…' : favoriteLoadError ? '연결 확인 중' : favoriteEntries.size+'개 메뉴';
-      document.getElementById('favorites-help').textContent = favoriteUserId ? '내 계정에 보관한 메뉴예요. 다른 기기에서도 로그인해서 꺼내볼 수 있어요.' : '로그인 전에는 이 브라우저에 저장해요. 같은 브라우저로 다시 오면 이어서 볼 수 있어요.';
+      document.getElementById('favorites-help').textContent = favoriteUserId ? '내 계정에 보관한 메뉴와 폴더예요. 다른 기기에서도 로그인해서 꺼내볼 수 있어요.' : '로그인 전에는 이 브라우저에 보관해요. 로그인 후 계정에 옮기기를 누르면 폴더도 함께 동기화해 드려요.';
       const retry = document.getElementById('favorites-retry'); retry.hidden = !favoriteLoadError; retry.disabled = favoriteLoading;
       const importButton = document.getElementById('favorites-import');
       const guestCount = favoriteUserId ? readGuestFavorites().size : 0;
       importButton.hidden = !favoriteUserId || !guestCount;
-      importButton.disabled = favoriteLoading || favoriteLoadError || favoriteImporting || favoritePending.size>0;
+      importButton.disabled = favoriteLoading || favoriteLoadError || favoriteImporting || favoriteFolderBusy || favoritePending.size>0;
       importButton.textContent = favoriteImporting ? '계정에 옮기는 중…' : '이 브라우저의 메뉴 '+guestCount+'개를 계정에 옮기기';
+      renderFolderControls();
       if (favoriteLoading || favoriteLoadError || !favoriteEntries.size) {
         const empty = element('div','empty');
         empty.append(element('strong','',favoriteLoading ? '보관한 한 끼를 모으고 있어요 🥄' : favoriteLoadError ? '계정 보관함에 다시 연결해 볼까요?' : '하트로 나만의 식탁을 채워봐요 ♥'));
@@ -477,9 +496,31 @@
         if (!favoriteLoading && !favoriteLoadError) { const browse = element('button','primary','오늘 메뉴 골라보기'); browse.type='button'; browse.addEventListener('click',()=>setFavoritesView(false)); empty.append(browse); }
         grid.append(empty);
       } else {
-        const entries = [...favoriteEntries.values()].sort((a,b)=>(Date.parse(b.created_at)||0)-(Date.parse(a.created_at)||0));
-        grid.append(...entries.map(entry=>recipeCard({...entry.recipe,favorite_key:entry.key})));
+        const entries = visibleFavoriteEntries();
+        if (!entries.length) {
+          const empty = element('div','empty'); empty.append(element('strong','','이 폴더에 어울리는 한 끼를 담아봐요 ♥'),element('p','','모든 메뉴에서 카드의 폴더를 바꾸거나, 메뉴 고르기에서 하트를 눌러보세요.')); grid.append(empty);
+        }
+        grid.append(...entries.map(entry=>{
+          const card = recipeCard({...entry.recipe,favorite_key:entry.key});
+          const controls = element('div','saved-controls');
+          const folderLabel = element('label','','📁 담아둘 폴더 ');
+          const select = element('select'); select.setAttribute('aria-label',entry.recipe.name+' 저장 폴더');
+          select.append(folderOption('','미분류'));
+          favoriteFolders.forEach(folder=>select.append(folderOption(folder.id,folder.name)));
+          select.value = favoriteFolders.has(entry.folder_id) ? entry.folder_id : '';
+          select.disabled = favoritePending.has(entry.key) || favoriteImporting || favoriteFolderBusy;
+          select.addEventListener('change',()=>moveFavoriteToFolder(entry.key,select.value || null));
+          folderLabel.append(select); controls.append(folderLabel);
+          const shopLabel = element('label','shopping-select');
+          const check = element('input'); check.type='checkbox'; check.checked=shoppingSelected.has(entry.key);
+          check.setAttribute('aria-label',entry.recipe.name+' 장보기 포함');
+          check.addEventListener('change',()=>{ if (check.checked) shoppingSelected.add(entry.key); else shoppingSelected.delete(entry.key); renderShoppingSummary(); if (!document.getElementById('shopping-panel').hidden) renderShoppingList(); });
+          shopLabel.append(check,element('span','','장볼 메뉴에 포함')); controls.append(shopLabel);
+          card.children[1].append(controls); return card;
+        }));
       }
+      renderShoppingSummary();
+      if (!document.getElementById('shopping-panel').hidden) renderShoppingList();
       if (focusWasInLibrary && !document.getElementById('favorites-view').hidden) {
         const replacement = [...grid.querySelectorAll('[data-favorite-key]')].find(button=>button.dataset.favoriteKey===focusedKey);
         (replacement || document.getElementById('favorites-title')).focus({preventScroll:true});
@@ -492,27 +533,29 @@
     }
     async function toggleFavorite(recipe) {
       const key = recipeFavoriteKey(recipe);
-      if (favoritePending.has(key) || favoriteLoading || favoriteLoadError || favoriteImporting) return;
+      if (favoritePending.has(key) || favoriteLoading || favoriteLoadError || favoriteImporting || favoriteFolderBusy) return;
       const epoch = favoriteEpoch, userId = favoriteUserId;
       const previous = favoriteEntries.get(key);
+      const wasSelected = shoppingSelected.has(key);
+      const folderId = favoriteFolders.has(favoriteFolderFilter) ? favoriteFolderFilter : null;
       const snapshot = favoriteSnapshot(recipe);
       if (!snapshot || key.length>512 || new Blob([JSON.stringify(snapshot)]).size>60000) { favoriteMessage('이 메뉴는 상세 내용을 간단히 정리한 뒤 다시 담아주세요.'); return; }
       favoritePending.add(key);
-      if (previous) favoriteEntries.delete(key);
-      else favoriteEntries.set(key,{key,recipe:snapshot,created_at:new Date().toISOString()});
+      if (previous) { favoriteEntries.delete(key); shoppingSelected.delete(key); }
+      else favoriteEntries.set(key,{key,recipe:snapshot,folder_id:folderId,created_at:new Date().toISOString()});
       refreshFavoriteUI();
-      favoriteMessage(previous ? '보관함에서 꺼냈어요.' : '나의 즐겨찾기에 담았어요 ♥');
+      favoriteMessage(previous ? '보관함에서 꺼냈어요.' : folderId ? favoriteFolders.get(folderId).name+' 폴더에 쏙 담았어요 ♥' : '나의 즐겨찾기에 담았어요 ♥');
       try {
         if (userId) {
           const request = previous
             ? authClient.from('favorites').delete().eq('user_id',userId).eq('recipe_key',key)
-            : authClient.from('favorites').upsert({user_id:userId,recipe_key:key,recipe:snapshot},{onConflict:'user_id,recipe_key',ignoreDuplicates:true});
+            : authClient.from('favorites').upsert({user_id:userId,recipe_key:key,recipe:snapshot,folder_id:folderId},{onConflict:'user_id,recipe_key',ignoreDuplicates:true});
           const {error} = await request;
           if (error) throw error;
         } else localStorage.setItem(GUEST_FAVORITES_KEY,JSON.stringify([...favoriteEntries.values()]));
       } catch (error) {
         if (epoch !== favoriteEpoch) return;
-        if (previous) favoriteEntries.set(key,previous); else favoriteEntries.delete(key);
+        if (previous) { favoriteEntries.set(key,previous); if (wasSelected) shoppingSelected.add(key); } else favoriteEntries.delete(key);
         favoriteMessage(userId ? '연결을 확인한 뒤 다시 눌러주세요. 보관 상태는 변경 전으로 돌려두었어요.' : '브라우저 저장 공간·설정을 확인한 뒤 다시 눌러주세요. 보관 상태는 변경 전으로 돌려두었어요.');
       } finally {
         if (epoch === favoriteEpoch) { favoritePending.delete(key); refreshFavoriteUI(); }
@@ -522,15 +565,17 @@
       favoriteLoading = true; favoriteLoadError = false; refreshFavoriteUI();
       try {
         const loaded = new Map();
+        const folders = await fetchAccountFolders(epoch,userId);
+        if (!folders || epoch !== favoriteEpoch) return;
         for (let offset=0; ; offset+=100) {
-          const {data:rows,error} = await authClient.from('favorites').select('recipe_key,recipe,created_at').eq('user_id',userId).order('created_at',{ascending:false}).order('recipe_key',{ascending:true}).range(offset,offset+99);
+          const {data:rows,error} = await authClient.from('favorites').select('recipe_key,recipe,folder_id,created_at').eq('user_id',userId).order('created_at',{ascending:false}).order('recipe_key',{ascending:true}).range(offset,offset+99);
           if (error) throw error;
           if (epoch !== favoriteEpoch) return;
           if (!Array.isArray(rows)) throw new Error('Invalid favorites response');
           rows.map(normalizeFavoriteEntry).filter(Boolean).forEach(entry=>loaded.set(entry.key,entry));
           if (rows.length<100) break;
         }
-        if (epoch === favoriteEpoch) favoriteEntries = loaded;
+        if (epoch === favoriteEpoch) { favoriteEntries = loaded; favoriteFolders = folders; favoriteMessage('내 계정 보관함을 준비했어요. 메뉴와 폴더를 함께 관리해봐요.'); }
       } catch (error) {
         if (epoch === favoriteEpoch) { favoriteLoadError = true; favoriteMessage('계정 보관함 연결을 확인해 볼까요? 다시 연결하기로 이어서 볼 수 있어요.'); }
       } finally {
@@ -541,6 +586,14 @@
       const nextId = user?.id || null;
       if (nextId === favoriteUserId) return;
       favoriteUserId = nextId; favoriteEpoch++;
+      favoriteFolders = nextId ? new Map() : readGuestFolders(); favoriteFolderFilter='all'; favoriteFolderBusy=false;
+      shoppingSelected.clear(); shoppingChecked.clear();
+      document.getElementById('shopping-panel').hidden=true;
+      document.getElementById('shopping-export').value='';
+      document.getElementById('shopping-export').hidden=true;
+      document.getElementById('shopping-intro').textContent=''; document.getElementById('shopping-status').textContent='';
+      document.getElementById('folder-name').value='';
+      document.getElementById('shopping-items').replaceChildren(); document.getElementById('shopping-sources').replaceChildren();
       favoritePending.clear(); favoriteImporting = false; favoriteLoadError = false; favoriteLoading = false;
       favoriteEntries = nextId ? new Map() : readGuestFavorites();
       favoriteMessage(nextId ? '내 계정 보관함으로 연결하고 있어요.' : '이 브라우저의 비회원 보관함으로 돌아왔어요.');
@@ -548,22 +601,33 @@
       if (nextId) await loadAccountFavorites(favoriteEpoch,nextId);
     }
     async function importGuestFavorites() {
-      if (!favoriteUserId || favoriteLoading || favoriteLoadError || favoriteImporting || favoritePending.size) return;
+      if (!favoriteUserId || favoriteLoading || favoriteLoadError || favoriteImporting || favoritePending.size || favoriteFolderBusy) return;
       const guest = [...readGuestFavorites().values()];
       if (!guest.length) return;
       const epoch = favoriteEpoch, userId = favoriteUserId;
       favoriteImporting = true; refreshFavoriteUI();
       try {
+        const guestFolders = [...readGuestFolders().values()];
+        if (guestFolders.length) {
+          const {error} = await authClient.from('favorite_folders').upsert(guestFolders.map(folder=>({...folder,user_id:userId})),{onConflict:'user_id,name',ignoreDuplicates:true});
+          if (error) throw error;
+        }
+        const accountFolders = await fetchAccountFolders(epoch,userId);
+        if (!accountFolders || epoch !== favoriteEpoch) return;
+        const folderMapping = new Map(guestFolders.map(folder=>[folder.id,[...accountFolders.values()].find(item=>item.name===folder.name)?.id || null]));
+        const imported = guest.map(entry=>({...entry,folder_id:folderMapping.get(entry.folder_id) || null}));
         for (let offset=0;offset<guest.length;offset+=50) {
           if (epoch !== favoriteEpoch) return;
-          const rows = guest.slice(offset,offset+50).map(entry=>({user_id:userId,recipe_key:entry.key,recipe:entry.recipe}));
+          const rows = imported.slice(offset,offset+50).map(entry=>({user_id:userId,recipe_key:entry.key,recipe:entry.recipe,folder_id:entry.folder_id}));
           const {error} = await authClient.from('favorites').upsert(rows,{onConflict:'user_id,recipe_key',ignoreDuplicates:true});
           if (error) throw error;
         }
         if (epoch !== favoriteEpoch) return;
-        guest.forEach(entry=>{ if (!favoriteEntries.has(entry.key)) favoriteEntries.set(entry.key,entry); });
+        favoriteFolders = accountFolders;
+        imported.forEach(entry=>{ if (!favoriteEntries.has(entry.key)) favoriteEntries.set(entry.key,entry); });
         try {
           localStorage.removeItem(GUEST_FAVORITES_KEY);
+          localStorage.removeItem(GUEST_FOLDERS_KEY);
           favoriteMessage('브라우저에 담아둔 메뉴를 내 계정으로 옮겼어요 ♥');
         } catch (error) { favoriteMessage('계정에 저장했어요. 이 브라우저의 보관함도 함께 유지해요.'); }
       } catch (error) {
@@ -572,15 +636,142 @@
         if (epoch === favoriteEpoch) { favoriteImporting = false; refreshFavoriteUI(); }
       }
     }
+    function folderOption(value,name) { const option=element('option','',name); option.value=value; return option; }
+    function visibleFavoriteEntries() {
+      return [...favoriteEntries.values()].filter(entry=>favoriteFolderFilter==='all' || (favoriteFolderFilter==='unfiled' ? !favoriteFolders.has(entry.folder_id) : entry.folder_id===favoriteFolderFilter)).sort((a,b)=>(Date.parse(b.created_at)||0)-(Date.parse(a.created_at)||0));
+    }
+    function renderFolderControls() {
+      if (!['all','unfiled'].includes(favoriteFolderFilter) && !favoriteFolders.has(favoriteFolderFilter)) favoriteFolderFilter='all';
+      const filter=document.getElementById('folder-filter'); filter.replaceChildren(folderOption('all','모든 메뉴'),folderOption('unfiled','미분류'));
+      favoriteFolders.forEach(folder=>filter.append(folderOption(folder.id,folder.name))); filter.value=favoriteFolderFilter;
+      const busy=favoriteLoading || favoriteLoadError || favoriteImporting || favoriteFolderBusy || favoritePending.size>0;
+      filter.disabled=busy; document.getElementById('folder-create-button').disabled=busy; document.getElementById('folder-name').disabled=busy;
+      if (!favoriteLoading && !favoriteLoadError) document.getElementById('favorites-count').textContent=visibleFavoriteEntries().length+'개 메뉴'+(favoriteFolderFilter==='all' ? '' : ' / 전체 '+favoriteEntries.size+'개');
+    }
+    async function fetchAccountFolders(epoch,userId) {
+      const folders=new Map();
+      for (let offset=0; ;offset+=100) {
+        const {data:rows,error}=await authClient.from('favorite_folders').select('id,name').eq('user_id',userId).order('name',{ascending:true}).range(offset,offset+99);
+        if (error) throw error; if (epoch!==favoriteEpoch) return null;
+        if (!Array.isArray(rows)) throw Error('Invalid folders response');
+        rows.filter(row=>validFolderId(row.id) && typeof row.name==='string').forEach(row=>folders.set(row.id,{id:row.id,name:row.name}));
+        if (rows.length<100) return folders;
+      }
+    }
+    async function createFavoriteFolder(value) {
+      const name=value.trim();
+      if (!name || name.length>40) { favoriteMessage('폴더 이름을 1~40자로 적어주세요. 예: 주말 특식'); return; }
+      if (favoriteFolderBusy || favoriteLoading || favoriteLoadError || favoriteImporting || favoritePending.size) return;
+      const existing=[...favoriteFolders.values()].find(folder=>folder.name===name);
+      if (existing) { favoriteFolderFilter=existing.id; refreshFavoriteUI(); favoriteMessage(name+' 폴더에서 메뉴를 골라봐요.'); return; }
+      const epoch=favoriteEpoch,userId=favoriteUserId;
+      let id;
+      try { id=crypto.randomUUID(); } catch (error) { favoriteMessage('브라우저 연결을 확인한 뒤 폴더를 다시 만들어주세요.'); return; }
+      favoriteFolderBusy=true; favoriteFolders.set(id,{id,name}); refreshFavoriteUI();
+      try {
+        if (userId) {
+          const {error}=await authClient.from('favorite_folders').upsert({user_id:userId,id,name},{onConflict:'user_id,name',ignoreDuplicates:true});
+          if (error) throw error;
+          const folders=await fetchAccountFolders(epoch,userId); if (!folders || epoch!==favoriteEpoch) return;
+          favoriteFolders=folders; id=[...folders.values()].find(folder=>folder.name===name)?.id;
+          if (!id) throw Error('Folder refresh required');
+        } else localStorage.setItem(GUEST_FOLDERS_KEY,JSON.stringify([...favoriteFolders.values()]));
+        if (epoch!==favoriteEpoch) return;
+        favoriteFolderFilter=id; document.getElementById('folder-name').value=''; favoriteMessage(name+' 폴더를 준비했어요. 카드에서 폴더를 골라 담아봐요!');
+      } catch (error) { if (epoch===favoriteEpoch) { favoriteFolders.delete(id); favoriteMessage('보관한 메뉴는 그대로예요. 연결·브라우저 저장 공간을 확인한 뒤 폴더를 다시 만들어주세요.'); } }
+      finally { if (epoch===favoriteEpoch) { favoriteFolderBusy=false; refreshFavoriteUI(); } }
+    }
+    async function moveFavoriteToFolder(key,folderId) {
+      const previous=favoriteEntries.get(key);
+      if (!previous || favoritePending.has(key) || favoriteLoading || favoriteLoadError || favoriteImporting || favoriteFolderBusy || (folderId && !favoriteFolders.has(folderId))) return;
+      const epoch=favoriteEpoch,userId=favoriteUserId;
+      favoritePending.add(key); favoriteEntries.set(key,{...previous,folder_id:folderId}); refreshFavoriteUI();
+      try {
+        if (userId) { const {data:rows,error}=await authClient.from('favorites').update({folder_id:folderId}).eq('user_id',userId).eq('recipe_key',key).select('recipe_key'); if (error) throw error; if (!rows?.length) throw Error('Favorite changed on another device'); }
+        else localStorage.setItem(GUEST_FAVORITES_KEY,JSON.stringify([...favoriteEntries.values()]));
+        if (epoch===favoriteEpoch) favoriteMessage((favoriteFolders.get(folderId)?.name || '미분류')+' 폴더에 쏙 담아두었어요 📌');
+      } catch (error) { if (epoch===favoriteEpoch) { favoriteEntries.set(key,previous); favoriteMessage('메뉴를 기존 폴더에 유지했어요. 연결을 확인하고 다시 분류해 주세요.'); } }
+      finally { if (epoch===favoriteEpoch) { favoritePending.delete(key); refreshFavoriteUI(); } }
+    }
+    function shoppingEntries() {
+      return shoppingSelected.size ? [...favoriteEntries.values()].filter(entry=>shoppingSelected.has(entry.key)) : visibleFavoriteEntries();
+    }
+    function renderShoppingSummary() {
+      [...shoppingSelected].forEach(key=>{ if (!favoriteEntries.has(key)) shoppingSelected.delete(key); });
+      document.getElementById('shopping-selection-summary').textContent=shoppingSelected.size ? '장볼 메뉴 '+shoppingSelected.size+'개를 골랐어요. 선택한 메뉴의 주재료를 한 번에 모아드려요.' : '선택하지 않으면 현재 폴더의 메뉴 '+visibleFavoriteEntries().length+'개를 모두 모아요. 카드에서 원하는 메뉴만 고를 수도 있어요.';
+      document.getElementById('shopping-build').disabled=favoriteLoading || favoriteLoadError || favoriteImporting || favoriteFolderBusy || !shoppingEntries().length;
+    }
+    function normalizeShoppingIngredient(value) {
+      let name=String(value || '').normalize('NFKC').replace(/<[^>]*>/g,' ').replace(/^[\s•●>·-]+/,'').replace(/\s+/g,' ').trim();
+      if (!name || /^(?:\[?\d+\s*인분\s*(?:기준)?\]?|주재료|필수재료|양념|소스|재료)[:：\s]*$/.test(name)) return '';
+      name=name.replace(/^(?:주재료|필수재료)\s*[:：>]\s*/,'').trim();
+      while (name.endsWith(')') && (name.match(/\)/g)||[]).length>(name.match(/\(/g)||[]).length) name=name.slice(0,-1).trim();
+      const aliases={'계란':'달걀','계란흰자':'달걀흰자','계란노른자':'달걀노른자','쇠고기':'소고기','다진쇠고기':'다진 소고기','다진 쇠고기':'다진 소고기','다진소고기':'다진 소고기'};
+      return aliases[name] || name;
+    }
+    function shoppingCategory(name) {
+      if (/콩나물|숙주/.test(name)) return '채소·과일·버섯';
+      if (/소금|간장|고추장|된장|기름|식초|설탕|꿀|소스|참깨|들깨|후추|레몬즙/.test(name)) return '양념·기본 재료';
+      if (/두부|달걀|닭|돼지|소고기|쇠고기|오리|새우|오징어|갈치|고등어|대구|명태|전복|굴|조개|바지락|생선|황태|북어|우유|요거트|요구르트|치즈|크림|콩|두유/.test(name)) return '단백질·해산물·유제품';
+      if (/쌀|현미|귀리|보리|밀가루|국수|파스타|우동|곤약|면|떡|빵/.test(name)) return '곡류·면·가루';
+      if (/무|당근|배추|양배추|브로콜리|시금치|상추|오이|가지|호박|감자|고구마|버섯|마늘|양파|대파|부추|고추|피망|파프리카|미나리|달래|냉이|쑥|두릅|열무|토마토|사과|배|감귤|유자|딸기|포도|옥수수|복숭아|수박|참외|잎|나물/.test(name)) return '채소·과일·버섯';
+      return '그 밖의 주재료';
+    }
+    function buildShoppingList(entries) {
+      const items=new Map(),review=[];
+      for (const entry of entries) {
+        const names=(entry.recipe.main_ingredients || []).map(normalizeShoppingIngredient).filter(Boolean);
+        if (!names.length) review.push(entry.recipe.name);
+        for (const name of names) {
+          if (!items.has(name)) items.set(name,{name,category:shoppingCategory(name),recipes:new Map()});
+          items.get(name).recipes.set(entry.key,entry.recipe.name);
+        }
+      }
+      return {items:[...items.values()].sort((a,b)=>a.category.localeCompare(b.category,'ko') || a.name.localeCompare(b.name,'ko')),review};
+    }
+    function shoppingListText() {
+      const entries=shoppingEntries(),list=buildShoppingList(entries);
+      return ['스마트 장보기 리스트 🛒','메뉴: '+entries.map(entry=>entry.recipe.name).join(', '),'',...list.items.map(item=>(shoppingChecked.has(item.name)?'☑ ':'☐ ')+item.name+' — '+[...item.recipes.values()].join(', ')),...list.review.map(name=>'재료 확인: '+name),'','분량·양념은 각 레시피에서 확인해 주세요.',...entries.map(entry=>'\n['+entry.recipe.name+']\n'+cleanText(entry.recipe.ingredients_text))].join('\n');
+    }
+    function renderShoppingList() {
+      const entries=shoppingEntries(),list=buildShoppingList(entries),container=document.getElementById('shopping-items'); container.replaceChildren();
+      document.getElementById('shopping-intro').textContent=entries.length ? entries.map(entry=>entry.recipe.name).join(' · ')+' — '+entries.length+'개 메뉴, 주재료 '+list.items.length+'종을 모았어요.' : '하트로 메뉴를 담으면 필요한 주재료를 한 번에 챙겨드릴게요.';
+      const categories=[...new Set(list.items.map(item=>item.category))]; let index=0;
+      for (const category of categories) {
+        container.append(element('h3','',category));
+        for (const item of list.items.filter(item=>item.category===category)) {
+          const label=element('label','shopping-item'),check=element('input'); check.type='checkbox'; check.checked=shoppingChecked.has(item.name); check.id='shopping-item-'+index++;
+          check.setAttribute('aria-label',item.name+' 준비 완료');
+          check.addEventListener('change',()=>{ if (check.checked) shoppingChecked.add(item.name); else shoppingChecked.delete(item.name); document.getElementById('shopping-status').textContent=list.items.filter(item=>shoppingChecked.has(item.name)).length+' / '+list.items.length+'종 준비했어요'; document.getElementById('shopping-export').value=shoppingListText(); });
+          const info=element('span'); info.append(element('span','ingredient-name',item.name),element('small','',[...item.recipes.values()].join(' · '))); label.append(check,info); container.append(label);
+        }
+      }
+      list.review.forEach(name=>container.append(element('p','hint',name+'의 주재료는 아래 상세 재료를 펼쳐 함께 확인해 주세요.')));
+      const sources=document.getElementById('shopping-sources'); sources.replaceChildren();
+      entries.forEach(entry=>sources.append(element('h3','',entry.recipe.name),element('p','',cleanText(entry.recipe.ingredients_text) || '레시피 카드의 재료를 함께 확인해 주세요.')));
+      document.getElementById('shopping-copy').disabled=!entries.length;
+      document.getElementById('shopping-export').value=shoppingListText();
+      document.getElementById('shopping-status').textContent=list.items.filter(item=>shoppingChecked.has(item.name)).length+' / '+list.items.length+'종 준비했어요';
+    }
+    async function copyShoppingList() {
+      const text=shoppingListText();
+      try { await navigator.clipboard.writeText(text); document.getElementById('shopping-status').textContent='장보기 목록을 복사했어요! 마트에서 꺼내보세요.'; }
+      catch (error) { const output=document.getElementById('shopping-export'); output.hidden=false; output.value=text; output.focus(); output.select(); document.getElementById('shopping-status').textContent='아래 목록을 선택해 복사하면 마트에서 꺼내볼 수 있어요.'; }
+    }
     function initializeFavorites() {
+      favoriteFolders = readGuestFolders();
       favoriteEntries = readGuestFavorites();
+      document.getElementById('folder-filter').addEventListener('change',event=>{ favoriteFolderFilter=event.target.value; renderFavoritesView(); });
+      document.getElementById('folder-create').addEventListener('submit',event=>{ event.preventDefault(); createFavoriteFolder(document.getElementById('folder-name').value); });
+      document.getElementById('shopping-build').addEventListener('click',()=>{ document.getElementById('shopping-panel').hidden=false; renderShoppingList(); document.getElementById('shopping-title').focus(); });
+      document.getElementById('shopping-copy').addEventListener('click',copyShoppingList);
       document.getElementById('favorites-view-button').addEventListener('click',()=>setFavoritesView(true));
       document.getElementById('menu-view-button').addEventListener('click',()=>setFavoritesView(false));
       document.getElementById('favorites-retry').addEventListener('click',()=>{ if (favoriteUserId && !favoriteLoading) loadAccountFavorites(favoriteEpoch,favoriteUserId); });
       document.getElementById('favorites-import').addEventListener('click',importGuestFavorites);
       window.addEventListener('storage',event=>{
-        if ((event.key===GUEST_FAVORITES_KEY || event.key===null) && !favoriteUserId && !favoritePending.size) { favoriteEntries=readGuestFavorites(); refreshFavoriteUI(); }
-        else if (event.key===GUEST_FAVORITES_KEY && favoriteUserId) renderFavoritesView();
+        if ([GUEST_FAVORITES_KEY,GUEST_FOLDERS_KEY,null].includes(event.key) && !favoriteUserId && !favoritePending.size && !favoriteFolderBusy) { favoriteFolders=readGuestFolders(); favoriteEntries=readGuestFavorites(); refreshFavoriteUI(); }
+        else if ([GUEST_FAVORITES_KEY,GUEST_FOLDERS_KEY].includes(event.key) && favoriteUserId) renderFavoritesView();
       });
       refreshFavoriteUI();
     }
