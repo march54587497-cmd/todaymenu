@@ -16,14 +16,24 @@
     @media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.season-stamp{width:105px;height:105px}.wrap{padding:0 22px}}
     @media(max-width:540px){.wrap{padding:0 18px}.top{min-height:76px;gap:12px}.brand{font-size:20px}.month-control{gap:7px}.month-control label{font-size:12px}.month-control select{padding:8px 10px}.hero{padding:36px 0 28px}.season-stamp{display:none}.intro{font-size:13px}.ingredients-panel{padding:20px;margin-bottom:30px}.chip{padding:8px 16px}.grid{grid-template-columns:1fr;gap:20px}.results-heading h2{font-size:20px}.card h3{font-size:19px}.photo{aspect-ratio:16/9}}
     @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+    [hidden]{display:none!important}.questionnaire{background:#fffdf7;border:1px solid var(--line);border-radius:22px;padding:28px;margin:0 0 32px}.question-top{display:flex;justify-content:space-between;gap:12px;align-items:center}.question-top h2{font-size:22px;margin:0}.progress{font-size:13px;color:var(--green)}.questions{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:24px 0}.questions fieldset{border:0;margin:0;padding:0;min-width:0}.questions legend{font-weight:700;margin-bottom:12px}.choices{display:flex;flex-wrap:wrap;gap:8px}.choice{position:relative}.choice input{position:absolute;opacity:0;width:1px;height:1px}.choice span{display:block;border:1px solid var(--line);border-radius:12px;padding:9px 13px;background:white;font-size:14px;cursor:pointer}.choice input:checked+span{background:var(--green);color:white;border-color:var(--green)}.choice input:focus-visible+span{outline:3px solid #ba790c;outline-offset:3px}.fridge-input{margin-top:12px}.fridge-input label{font-size:13px;display:block;margin-bottom:6px}.fridge-input input{font:inherit;border:1px solid #b8c4ae;border-radius:9px;padding:11px;width:100%;background:white}.hint{font-size:12px;color:var(--muted);margin:8px 0}.actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.primary{border:0;border-radius:12px;padding:13px 24px;background:var(--green);color:white;font:inherit;font-weight:700;cursor:pointer}.secondary{border:0;background:transparent;color:var(--muted);text-decoration:underline;padding:10px;cursor:pointer}.feedback{color:var(--green);font-size:14px;margin:14px 0 0}.recommendation-note{color:var(--muted);font-size:13px;margin:-10px 0 22px}.hero{padding-top:36px;padding-bottom:26px}h1{font-size:clamp(30px,3.8vw,43px)}@media(max-width:650px){.questions{grid-template-columns:1fr;gap:22px}.questionnaire{padding:22px 18px}.question-top h2{font-size:19px}.choice span{font-size:13px}.question-top{align-items:flex-start}}
   </style>
 </head>
 <body>
   <header><div class="wrap top"><div class="brand">오늘 <span>뭐먹지?</span></div><div class="month-control"><label for="month">계절을 골라요</label><select id="month" disabled></select></div></div></header>
   <main class="wrap">
-    <section class="hero" aria-labelledby="hero-title"><div><div class="eyebrow">SEASONAL TABLE · 제철 식탁</div><h1 id="hero-title"><em id="hero-month"></em>, 제철로 차리는<br>오늘의 한 끼.</h1><p class="intro">지금 가장 맛있는 재료로, 오늘의 메뉴 고민을 덜어보세요.</p></div><div class="season-stamp" aria-hidden="true"><small>IN SEASON</small><strong id="stamp-month"></strong><small>제철의 맛</small></div></section>
-    <section class="ingredients-panel" aria-labelledby="ingredients-title"><div class="panel-heading"><h2 id="ingredients-title">이달의 제철 재료</h2><p>먹고 싶은 재료를 선택해 보세요.</p></div><div class="ingredients" id="ingredients"></div></section>
-    <section aria-labelledby="results-title"><div class="results-heading"><h2 id="results-title">이달의 추천 메뉴</h2><span class="count" id="count" role="status" aria-live="polite"></span></div><div class="grid" id="recipes" aria-busy="true"><div class="empty" role="status">제철 메뉴를 불러오고 있어요.</div></div></section>
+    <section class="hero" aria-labelledby="hero-title"><div><div class="eyebrow">SEASONAL TABLE · 제철 식탁</div><h1 id="hero-title">오늘은 어떤 한 끼가<br><em>당기세요?</em></h1><p class="intro"><span id="hero-month"></span> 제철 재료에 내 취향 한 스푼. 네 가지만 고르면 함께 찾아드릴게요.</p></div><div class="season-stamp" aria-hidden="true"><small>IN SEASON</small><strong id="stamp-month"></strong><small>제철의 맛</small></div></section>
+    <form id="preferences" class="questionnaire" aria-labelledby="question-title">
+      <div class="question-top"><h2 id="question-title">딱 내 입맛을 찾아볼까요? 🥄</h2><span class="progress" id="progress" role="status" aria-live="polite">0 / 4 선택했어요</span></div>
+      <div class="questions" id="questions"></div>
+      <div class="fridge-input" id="fridge-input" hidden><label for="fridge-items">냉장고에 어떤 재료가 있나요?</label><input id="fridge-items" placeholder="예: 두부, 달걀, 양파" maxlength="200"><p class="hint">쉼표로 나눠 적어주세요. 적어주신 재료가 하나 이상 들어가는 메뉴를 찾아요. 추가 재료는 레시피에서 확인해 주세요.</p></div>
+      <div class="actions"><button class="primary" id="recommend" type="submit" disabled>내 취향 메뉴 만나기 →</button><button class="secondary" type="reset">처음부터 고를래요</button></div>
+      <p class="feedback" id="feedback" role="status" aria-live="polite">정답은 없어요. 지금 마음이 가는 쪽을 골라주세요!</p>
+    </form>
+    <div id="recommendations" hidden>
+    <section class="ingredients-panel" aria-labelledby="ingredients-title"><div class="panel-heading"><h2 id="ingredients-title">제철 재료로 한 번 더 골라볼까요?</h2><p>내 취향에 먹고 싶은 재료를 더해요.</p></div><div class="ingredients" id="ingredients"></div></section>
+    <section aria-labelledby="results-title"><div class="results-heading"><h2 id="results-title" tabindex="-1">이달의 추천 메뉴</h2><span class="count" id="count" role="status" aria-live="polite"></span></div><p class="recommendation-note" id="recommendation-note"></p><div class="grid" id="recipes" aria-busy="true"><div class="empty" role="status">제철 메뉴를 불러오고 있어요.</div></div></section>
+    </div>
   </main>
   <footer><div class="wrap footer-inner"><span>오늘 뭐먹지? · 계절을 담은 작은 식탁</span><span>레시피·사진: 제공된 menu.json / 식품안전나라</span></div></footer>
   <script>
@@ -34,6 +44,76 @@
     const countEl = document.getElementById('count');
     let data = null;
     let selectedIngredient = '';
+    let submitted = false;
+    const form = document.getElementById('preferences');
+    const answers = { occasion: '', taste: '', method: '', fridge: '' };
+    const questionDefinitions = [
+      ['occasion', '1. 언제, 어떤 한 끼를 드실 건가요?', [['breakfast','🌤 가벼운 아침'],['meal','🍚 든든한 점심·저녁'],['snack','🍎 간식·후식'],['any','아무 때나 좋아요']]],
+      ['taste', '2. 지금 당기는 맛이나 메뉴는요?', [['mild','🌿 담백하고 순하게'],['spicy','🌶 매콤하게'],['sweet','🍯 달콤하게'],['noodles','🍜 면 요리가 좋아요'],['any','뭐든 좋아요']]],
+      ['method', '3. 오늘은 어떻게 요리할까요?', [['boil','🥘 보글보글 끓이기'],['pan','🍳 굽거나 볶기'],['steam','♨ 촉촉하게 찌기'],['fry','🍤 바삭하게 튀기기'],['any','방식은 상관없어요']]],
+      ['fridge', '4. 냉장고 재료를 활용할까요?', [['yes','🧺 있는 재료로 만들래요'],['no','🛒 장을 봐도 좋아요'],['any','일단 메뉴부터 볼래요']]]
+    ];
+    for (const [key, title, options] of questionDefinitions) {
+      const fieldset = element('fieldset');
+      fieldset.append(element('legend', '', title));
+      const choices = element('div', 'choices');
+      for (const [value, label] of options) {
+        const choice = element('label', 'choice');
+        const input = element('input');
+        input.type = 'radio'; input.name = key; input.value = value; input.required = true;
+        input.addEventListener('change', () => {
+          answers[key] = value;
+          const useFridge = answers.fridge === 'yes';
+          document.getElementById('fridge-input').hidden = !useFridge;
+          document.getElementById('fridge-items').required = useFridge;
+          const completed = Object.values(answers).filter(Boolean).length;
+          document.getElementById('progress').textContent = completed + ' / 4 선택했어요';
+          document.getElementById('feedback').textContent = completed === 4 ? '좋아요! 이제 내 취향에 맞는 제철 메뉴를 만나봐요.' : '좋아요, 취향이 조금씩 보이네요. 나머지도 골라볼까요?';
+          if (submitted) renderRecipes();
+        });
+        choice.append(input, element('span', '', label)); choices.append(choice);
+      }
+      fieldset.append(choices); document.getElementById('questions').append(fieldset);
+    }
+    function fridgeItems() {
+      return document.getElementById('fridge-items').value.split(/[,，\n]+/).map(value => value.trim()).filter(Boolean);
+    }
+    function fitsPreferences(recipe) {
+      const text = [recipe.name, recipe.ingredients_text, ...(recipe.main_ingredients || [])].join(' ');
+      const spicy = /고추장|고춧가루|고추가루|청양|매운|매콤|불닭/.test(text);
+      if (answers.occasion === 'breakfast' && (!['밥','국&찌개','일품'].includes(recipe.category) || spicy)) return false;
+      if (answers.occasion === 'meal' && !['밥','국&찌개','일품','반찬'].includes(recipe.category)) return false;
+      if (answers.occasion === 'snack' && recipe.category !== '후식') return false;
+      if (answers.taste === 'mild' && (spicy || recipe.category === '후식')) return false;
+      if (answers.taste === 'spicy' && !spicy) return false;
+      if (answers.taste === 'sweet' && recipe.category !== '후식') return false;
+      if (answers.taste === 'noodles' && !/국수|파스타|우동|냉면|라면|쫄면|면볶음|면말이/.test(recipe.name)) return false;
+      const methods = {boil:['끓이기'],pan:['굽기','볶기'],steam:['찌기'],fry:['튀기기']};
+      if (methods[answers.method] && !methods[answers.method].includes(recipe.method)) return false;
+      if (answers.fridge === 'yes' && (!fridgeItems().length || !fridgeItems().some(item => text.includes(item)))) return false;
+      return true;
+    }
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      if (!data) return;
+      if (!Object.values(answers).every(Boolean)) { document.getElementById('feedback').textContent = '네 가지 질문에서 하나씩 골라주세요.'; return; }
+      if (answers.fridge === 'yes' && !fridgeItems().length) { document.getElementById('feedback').textContent = '활용할 재료를 하나만 알려주세요!'; document.getElementById('fridge-items').focus(); return; }
+      submitted = true;
+      document.getElementById('recommendations').hidden = false;
+      renderRecipes();
+      document.getElementById('results-title').focus();
+    });
+    form.addEventListener('reset', () => {
+      Object.keys(answers).forEach(key => answers[key] = '');
+      submitted = false; selectedIngredient = '';
+      document.getElementById('fridge-input').hidden = true;
+      document.getElementById('fridge-items').required = false;
+      document.getElementById('recommendations').hidden = true;
+      document.getElementById('progress').textContent = '0 / 4 선택했어요';
+      document.getElementById('feedback').textContent = '새로운 한 끼를 골라볼까요? 지금 끌리는 쪽을 눌러주세요.';
+      if (data) renderIngredients();
+    });
+    document.getElementById('fridge-items').addEventListener('input', () => { if (submitted) renderRecipes(); });
     for (let month = 1; month <= 12; month++) {
       const option = document.createElement('option');
       option.value = month;
@@ -102,14 +182,15 @@
     }
     function renderRecipes() {
       const month = Number(monthSelect.value);
-      const recipes = data.recipes.filter(recipe => recipe.months.includes(month) && (!selectedIngredient || recipe.seasonal.includes(selectedIngredient)));
-      document.getElementById('results-title').textContent = selectedIngredient ? selectedIngredient + '로 만드는 한 끼' : '이달의 추천 메뉴';
+      const recipes = data.recipes.filter(recipe => recipe.months.includes(month) && (!selectedIngredient || recipe.seasonal.includes(selectedIngredient)) && fitsPreferences(recipe));
+      document.getElementById('results-title').textContent = selectedIngredient ? selectedIngredient + '로 만드는 나의 한 끼' : '이런 한 끼, 어때요?';
+      document.getElementById('recommendation-note').textContent = month + '월 제철 메뉴 중 고른 취향에 맞춰 찾았어요. 맛은 메뉴명·재료로 추정하며, 달콤한 메뉴는 후식에서 골라요.';
       countEl.textContent = '총 ' + recipes.length + '개 메뉴';
       recipesEl.replaceChildren();
       if (recipes.length) recipesEl.append(...recipes.map(recipeCard));
       else {
         const empty = element('div', 'empty');
-        empty.append(element('strong', '', '조건에 맞는 레시피가 없어요.'), element('p', '', '다른 재료나 다른 월을 선택해 보세요.'));
+        empty.append(element('strong', '', '앗, 이 조합은 아직 준비된 메뉴가 없어요.'), element('p', '', '위 질문에서 요리 방식이나 맛을 “상관없어요·뭐든 좋아요”로 바꾸거나, 다른 월·재료를 골라볼까요?'));
         recipesEl.append(empty);
       }
       recipesEl.setAttribute('aria-busy', 'false');
@@ -128,9 +209,12 @@
         data = await response.json();
         if (!Array.isArray(data.seasonal) || !Array.isArray(data.recipes)) throw new Error('Invalid menu data');
         monthSelect.disabled = false;
+        document.getElementById('recommend').disabled = false;
         renderIngredients();
         renderRecipes();
       } catch (error) {
+        document.getElementById('recommendations').hidden = false;
+        document.getElementById('recommend').disabled = true;
         recipesEl.replaceChildren();
         countEl.textContent = '';
         const empty = element('div', 'empty');
