@@ -46,6 +46,7 @@
     const recipesEl = document.getElementById('recipes');
     const countEl = document.getElementById('count');
     let data = null;
+    let usingSeasonalGuide = false;
     let selectedIngredient = '';
     let submitted = false;
     const form = document.getElementById('preferences');
@@ -81,19 +82,19 @@
     function fridgeItems() {
       return document.getElementById('fridge-items').value.split(/[,，\n]+/).map(value => value.trim()).filter(Boolean);
     }
-    function fitsPreferences(recipe) {
+    function fitsPreferences(recipe, preferences = answers) {
       const text = [recipe.name, recipe.ingredients_text, ...(recipe.main_ingredients || [])].join(' ');
       const spicy = /고추장|고춧가루|고추가루|청양|매운|매콤|불닭/.test(text);
-      if (answers.occasion === 'breakfast' && (!['밥','국&찌개','일품'].includes(recipe.category) || spicy)) return false;
-      if (answers.occasion === 'meal' && !['밥','국&찌개','일품','반찬'].includes(recipe.category)) return false;
-      if (answers.occasion === 'snack' && recipe.category !== '후식') return false;
-      if (answers.taste === 'mild' && (spicy || recipe.category === '후식')) return false;
-      if (answers.taste === 'spicy' && !spicy) return false;
-      if (answers.taste === 'sweet' && recipe.category !== '후식') return false;
-      if (answers.taste === 'noodles' && !/국수|파스타|우동|냉면|라면|쫄면|면볶음|면말이/.test(recipe.name)) return false;
+      if (preferences.occasion === 'breakfast' && (!['밥','국&찌개','일품'].includes(recipe.category) || spicy)) return false;
+      if (preferences.occasion === 'meal' && !['밥','국&찌개','일품','반찬'].includes(recipe.category)) return false;
+      if (preferences.occasion === 'snack' && recipe.category !== '후식') return false;
+      if (preferences.taste === 'mild' && (spicy || recipe.category === '후식')) return false;
+      if (preferences.taste === 'spicy' && !spicy) return false;
+      if (preferences.taste === 'sweet' && recipe.category !== '후식') return false;
+      if (preferences.taste === 'noodles' && !/국수|파스타|우동|냉면|라면|쫄면|면볶음|면말이/.test(recipe.name)) return false;
       const methods = {boil:['끓이기'],pan:['굽기','볶기'],steam:['찌기'],fry:['튀기기']};
-      if (methods[answers.method] && !methods[answers.method].includes(recipe.method)) return false;
-      if (answers.fridge === 'yes' && (!fridgeItems().length || !fridgeItems().some(item => text.includes(item)))) return false;
+      if (methods[preferences.method] && !methods[preferences.method].includes(recipe.method)) return false;
+      if (preferences.fridge === 'yes' && (!fridgeItems().length || !fridgeItems().some(item => text.includes(item)))) return false;
       return true;
     }
     form.addEventListener('submit', event => {
@@ -142,29 +143,107 @@
       const policy = data.recommendation_policy || {};
       return {month, ingredients, recipes, insufficient: ingredients < (policy.min_seasonal_ingredients ?? 5) || recipes < (policy.min_registered_recipes ?? 20)};
     }
+    const seasonalBackup = [
+      ['무','당근','브로콜리','시금치'],['봄동','시금치'],['냉이','양배추'],['미나리','달래'],
+      ['상추','오이'],['감자','양파'],['애호박','오이'],['가지','단호박'],
+      ['표고버섯','고구마'],['연근','호박'],['무','배추'],['브로콜리','시금치']
+    ];
+    const substitutionGroups = [
+      {names:['시금치','봄동','배추','양배추','상추','열무','청경채','케일','근대'],reason:'잎채소의 식감과 조리 용도'},
+      {names:['무','당근','연근','우엉','감자','고구마','단호박','호박'],reason:'익혔을 때의 식감과 조리 용도'},
+      {names:['냉이','달래','미나리','두릅','쑥','참나물','깻잎'],reason:'향을 더하는 조리 용도'},
+      {names:['가지','애호박','오이','토마토'],reason:'수분감과 채소 반찬 용도'},
+      {names:['표고버섯','팽이버섯','느타리버섯','새송이버섯','양송이버섯'],reason:'버섯의 식감과 감칠맛'}
+    ];
+    function basicSeasonalRecipes(month, ingredients) {
+      const choices = ingredients.filter(name => substitutionGroups.some(group => group.names.includes(name)));
+      const desiredGroups = substitutionGroups.filter(group => [selectedIngredient,...(answers.fridge === 'yes' ? fridgeItems() : [])].some(name => group.names.includes(name)));
+      choices.sort((a,b) => Number(desiredGroups.some(group=>group.names.includes(b))) - Number(desiredGroups.some(group=>group.names.includes(a))));
+      const vegetables = choices.length ? choices.slice(0,2) : seasonalBackup[month-1];
+      return ['끓이기','찌기'].map((method,index) => ({
+        id:'basic-'+month+'-'+index,name:vegetables.join('·')+' 두부'+(index ? '찜' : '국'),category:'일품',method,
+        seasonal:vegetables,months:[month],main_ingredients:[...vegetables,'두부','양파','표고버섯'],
+        ingredients_text:'2인분 제안: '+vegetables.map(name=>name+' 100g').join(', ')+', 두부 200g, 양파 50g, 표고버섯 20g, 물 '+(index?'100ml':'500ml')+', 들깨가루 소량',
+        steps:['채소와 버섯을 씻어 먹기 좋은 크기로 썰고 두부를 준비해요.',index ? '내열 그릇에 채소, 두부와 물을 담아 찜기에 넣고 재료가 부드러워질 때까지 익혀요.' : '물에 양파와 표고버섯을 넣고 끓이다 채소와 두부를 넣어 속까지 익혀요.','들깨가루를 조금 넣어 고소하게 마무리해요. 소금이나 간장은 맛을 본 뒤 소량만 더해요.'],
+        tip:'양파와 표고버섯의 감칠맛, 들깨가루의 고소함을 활용해 양념을 줄여요. 제철 채소에 두부를 곁들이고 밥과 함께 한 끼로 즐겨요.',
+        protein_pairing:'두부',supplemental:true,image:null
+      }));
+    }
     function supplementalMonth(month) {
-      return data.supplemental?.months?.find(item => item.month === month) || {ingredients:[],recipes:[],climate:''};
+      const plan = data.supplemental?.months?.find(item => item.month === month);
+      const ingredients = plan?.ingredients?.length ? plan.ingredients : seasonalBackup[month-1];
+      const recipes = plan?.recipes?.length ? plan.recipes : basicSeasonalRecipes(month,ingredients);
+      return {ingredients,recipes,climate:plan?.climate || '기본 계절 가이드의 채소에 단백질을 곁들인 제안이에요. 산지와 재배 방식에 따라 제철 시기는 달라질 수 있어요.'};
+    }
+    function alternativeNotes(recipe) {
+      const notes = [];
+      const any = {occasion:'any',taste:'any',method:'any',fridge:'no'};
+      const labels = {occasion:'식사 상황',taste:'맛·장르',method:'조리 방식',fridge:'냉장고 재료'};
+      for (const key of Object.keys(labels)) {
+        if (!fitsPreferences(recipe,{...any,[key]:answers[key]})) {
+          if (key === 'fridge') {
+            for (const requested of fridgeItems()) {
+              const group = substitutionGroups.find(item=>item.names.includes(requested));
+              const replacement = group && recipe.seasonal.find(name=>group.names.includes(name));
+              if (replacement) notes.push('대체 재료: '+requested+' → '+replacement+' ('+group.reason+' 기준). 영양 성분이 같다는 뜻은 아니에요.');
+            }
+            notes.push('장보기 제안: '+recipe.main_ingredients.join(', ')+'를 준비해요. 입력한 냉장고 재료를 쓴 메뉴와는 구분해 드려요.');
+          }
+          else if (key === 'method') notes.push('조리 방식 대안: 선택한 방식 대신 '+recipe.method+'로 만들어봐요.');
+          else if (key === 'taste') notes.push('맛·장르 대안: '+(answers.taste === 'noodles' ? '면 요리 대신 ' : answers.taste === 'sweet' ? '달콤한 메뉴 대신 ' : '매콤한 메뉴 대신 ')+recipe.name+'의 담백한 맛을 즐겨봐요.');
+          else notes.push('식사 상황 대안: '+recipe.category+' 메뉴로 한 끼를 차려봐요.');
+        }
+      }
+      if (selectedIngredient && !recipe.seasonal.includes(selectedIngredient)) {
+        const group = substitutionGroups.find(item => item.names.includes(selectedIngredient));
+        const replacement = group && recipe.seasonal.find(name => group.names.includes(name));
+        notes.unshift(replacement ? '대체 재료: '+selectedIngredient+' → '+replacement+' ('+group.reason+' 기준). 영양 성분이 같다는 뜻은 아니에요.' : '제철 재료 대안: '+selectedIngredient+' 대신 '+recipe.seasonal.join('·')+'를 주재료로 골랐어요.');
+      }
+      return notes;
+    }
+    function chooseAlternatives(month, existing, limit) {
+      const seen = new Set(existing.map(recipe => recipe.name));
+      const signature = recipe => [...recipe.seasonal].sort().join('|')+'|'+recipe.method+'|'+recipe.protein_pairing;
+      const combinations = new Set(existing.map(signature));
+      const plan = supplementalMonth(month);
+      const candidates = [...plan.recipes, ...basicSeasonalRecipes(month,plan.ingredients)].filter(recipe => {
+        if (seen.has(recipe.name) || combinations.has(signature(recipe))) return false;
+        seen.add(recipe.name); combinations.add(signature(recipe)); return true;
+      });
+      return candidates.map(recipe => {
+        const notes = alternativeNotes(recipe);
+        const any = {occasion:'any',taste:'any',method:'any',fridge:'no'};
+        const score = Object.keys(any).filter(key=>!fitsPreferences(recipe,{...any,[key]:answers[key]})).length
+          + (answers.fridge === 'yes' && !fitsPreferences(recipe,{...any,fridge:'yes'}) ? 3 : 0)
+          + (selectedIngredient && !recipe.seasonal.includes(selectedIngredient) ? 2 : 0)
+          - (notes.some(note=>note.startsWith('대체 재료:')) ? 2 : 0);
+        return {...recipe,supplemental:true,alternative:true,alternative_notes:notes,score};
+      }).sort((a,b)=>a.score-b.score).slice(0,limit);
     }
     function matchesSelection(recipe, month) {
       return recipe.months?.includes(month) && (!selectedIngredient || recipe.seasonal?.includes(selectedIngredient)) && fitsPreferences(recipe);
     }
-    function renderSupplementNotice(month, registeredCount, additionalCount, useSupplement) {
+    function renderSupplementNotice(month, registeredCount, additions, useSupplement) {
       const status = coverage(month);
       const notice = document.getElementById('supplement-notice');
       notice.replaceChildren(); notice.hidden = !useSupplement;
       const gaps = Array.from({length:12}, (_, i) => coverage(i+1)).filter(item => item.insufficient);
-      document.getElementById('data-summary').textContent = '등록 데이터 점검 · ' + (gaps.length ? '보완 대상: ' + gaps.map(item => item.month + '월').join(', ') : '모든 월의 기본 데이터가 준비되어 있어요.') + ' · 현재 ' + month + '월: 식재료 ' + status.ingredients + '종 / 레시피 ' + status.recipes + '개';
+      document.getElementById('data-summary').textContent = '계절 대안 준비 · ' + (gaps.length ? gaps.map(item => item.month + '월').join(', ') : '모든 월의 기본 데이터가 준비되어 있어요.') + ' · 제철 재료와 단백질을 곁들여 추천해요.';
       if (!useSupplement) return;
       const heading = element('h2', '', month + '월, 제철 식탁을 조금 더 채워드릴게요.'); heading.id = 'supplement-title'; notice.append(heading);
-      notice.append(element('p', '', status.insufficient ? '해당 월에는 제철 식재료/레시피 데이터가 부족하여 다음과 같은 건강·제철 맞춤 메뉴를 추가로 추천해 드립니다:' : month + '월의 전체 데이터는 충분하지만, 고른 취향에 맞는 등록 메뉴가 ' + registeredCount + '개로 적어 추가 제안을 찾아봤어요.'));
-      notice.append(element('p', '', '등록 데이터: 식재료 ' + status.ingredients + '종 · 레시피 ' + status.recipes + '개 / 현재 조건에 맞는 추가 제안 ' + additionalCount + '개'));
+      const replacements = [...new Set(additions.flatMap(recipe => recipe.seasonal))].join('·') || supplementalMonth(month).ingredients.slice(0,2).join('·');
+      const intro = usingSeasonalGuide ? '원본 메뉴 연결을 확인하는 동안, '+month+'월의 기본 계절 가이드에서 고른 재료('+replacements+')로 이렇게 만들 수 있어요!'
+        : status.ingredients === 0 || status.recipes === 0
+        ? '현재 '+month+'월에 등록된 전용 제철 데이터는 비어 있지만, 비슷한 제철 식재료('+replacements+')를 활용해 이렇게 만들 수 있어요!'
+        : month+'월에는 제철 재료('+replacements+')를 활용해 이런 한 끼도 만들 수 있어요! 고른 취향에 가까운 건강·제철 대안을 함께 준비했어요.';
+      notice.append(element('p', '', intro));
+      if (additions.some(recipe => recipe.alternative_notes?.length)) notice.append(element('p', '', '새로운 재료나 조리법을 제안하는 카드에는 바뀌는 조건과 장보기 재료를 함께 적었어요.'));
       notice.append(element('p', '', supplementalMonth(month).climate));
       notice.append(element('p', 'hint', data.supplemental?.notice || '추가 제안은 등록 레시피와 구분해 안내해요.'));
-      if (!additionalCount) notice.append(element('p', '', '지금 고른 조건을 모두 만족하는 추가 메뉴는 아직 없어요. 맛·조리 방식이나 냉장고 재료 조건을 바꾸면 더 찾아볼 수 있어요.'));
-      const audit = element('details', 'audit'); audit.append(element('summary', '', '어떤 달의 데이터가 부족한가요?'));
+      const audit = element('details', 'audit'); audit.append(element('summary', '', '등록 현황과 추가 추천 기준 살펴보기'));
       const list = element('ul'); gaps.forEach(item => list.append(element('li', '', item.month + '월: 식재료 ' + item.ingredients + '종 / 등록 레시피 ' + item.recipes + '개')));
       const policy = data.recommendation_policy || {};
-      audit.append(element('p', '', '보완 기준: 식재료 ' + (policy.min_seasonal_ingredients ?? 5) + '종 미만 또는 등록 레시피 ' + (policy.min_registered_recipes ?? 20) + '개 미만. 취향에 맞는 등록 메뉴가 ' + (policy.min_filtered_recipes ?? 3) + '개 미만이어도 추가 제안을 찾아요. 추천 폭을 위한 서비스 기준이에요.'), list); notice.append(audit);
+      audit.append(element('p', '', usingSeasonalGuide ? '원본 연결 확인 중: 실제 등록 수는 연결 후 표시해요.' : '현재 '+month+'월 등록 현황: 식재료 '+status.ingredients+'종 · 레시피 '+status.recipes+'개'),element('p', '', '보완 기준: 식재료 ' + (policy.min_seasonal_ingredients ?? 5) + '종 미만 또는 등록 레시피 ' + (policy.min_registered_recipes ?? 20) + '개 미만. 취향에 맞는 등록 메뉴가 ' + (policy.min_filtered_recipes ?? 3) + '개 미만이어도 추가 제안을 찾아요. 추천 폭을 위한 서비스 기준이에요.'), list); notice.append(audit);
       const sources = element('div', 'sources');
       for (const source of data.supplemental?.sources || []) {
         if (!/^https:\/\//.test(source.url)) continue;
@@ -192,14 +271,14 @@
     function recipeCard(recipe) {
       const card = element('article', recipe.supplemental ? 'card supplement-card' : 'card');
       const photo = element('div', 'photo');
-      const fallback = element('span', 'fallback', recipe.supplemental ? '🌿 제철 맞춤 제안 · 사진 없음' : '사진을 준비하고 있어요');
+      const fallback = element('span', 'fallback', recipe.supplemental ? '🌿 계절을 담은 아이디어 메뉴' : '사진을 준비하고 있어요');
       photo.append(fallback);
       if (recipe.image) {
         const img = element('img');
         img.alt = recipe.name;
         img.loading = 'lazy';
         img.decoding = 'async';
-        img.addEventListener('error', () => { img.remove(); fallback.textContent = '사진을 불러올 수 없어요'; });
+        img.addEventListener('error', () => { img.remove(); fallback.textContent = '🥄 레시피와 함께 만들어봐요'; });
         img.addEventListener('load', () => { fallback.hidden = true; });
         img.src = recipe.image;
         photo.append(img);
@@ -207,9 +286,13 @@
       const body = element('div', 'card-body');
       body.append(element('span', 'category', recipe.category || '요리'), element('h3', '', recipe.name));
       if (recipe.supplemental) {
-        body.append(element('span', 'suggestion-label', '추가 추천 · 서비스 제안'));
+        body.append(element('span', 'suggestion-label', recipe.alternative ? '센스 있는 대안 · 서비스 제안' : '추가 추천 · 서비스 제안'));
         const info = element('div', 'supplement-info');
         info.append(element('strong', '', '주요 제철 식재료'), element('p', '', recipe.seasonal.join(' · ')), element('strong', '', '함께 곁들일 단백질'), element('p', '', recipe.protein_pairing), element('strong', '', '저나트륨/건강 조리 팁'), element('p', '', recipe.tip)); body.append(info);
+        if (recipe.alternative_notes?.length) {
+          const changes = element('div','supplement-info'); changes.append(element('strong','','이렇게 바꿔 즐겨봐요'));
+          recipe.alternative_notes.forEach(note=>changes.append(element('p','',note))); body.append(changes);
+        }
       }
       body.append(element('p', 'meta', [recipe.method, recipe.kcal != null ? recipe.kcal + ' kcal' : ''].filter(Boolean).join(' · ')));
       body.append(element('p', 'tags', (recipe.seasonal || []).map(name => '# ' + name).join('  ')));
@@ -234,18 +317,15 @@
         if (seen.has(recipe.name) || !matchesSelection(recipe, month)) return false;
         seen.add(recipe.name); return true;
       }) : [];
-      const recipes = [...additional, ...registered];
-      renderSupplementNotice(month, registered.length, additional.length, useSupplement);
-      document.getElementById('results-title').textContent = selectedIngredient ? selectedIngredient + '로 만드는 나의 한 끼' : '이런 한 끼, 어때요?';
-      document.getElementById('recommendation-note').textContent = month + '월 제철 메뉴 중 고른 취향에 맞춰 찾았어요. 맛은 메뉴명·재료로 추정하며, 달콤한 메뉴는 후식에서 골라요. 추가 제안의 영양 수치는 산출하지 않았어요.';
-      countEl.textContent = '등록 ' + registered.length + '개' + (useSupplement ? ' · 추가 제안 ' + additional.length + '개' : '');
+      const exact = [...additional, ...registered];
+      const alternatives = exact.length < 3 || (useSupplement && !additional.length) ? chooseAlternatives(month,exact,Math.max(1,2-exact.length)) : [];
+      const recipes = [...additional, ...registered, ...alternatives];
+      renderSupplementNotice(month, registered.length, [...additional,...alternatives], useSupplement || alternatives.length > 0);
+      document.getElementById('results-title').textContent = alternatives.length ? '이렇게 바꿔 즐겨보는 건 어때요?' : selectedIngredient ? selectedIngredient + '로 만드는 나의 한 끼' : '이런 한 끼, 어때요?';
+      document.getElementById('recommendation-note').textContent = month + '월의 계절과 취향을 함께 고려했어요. 조건을 바꾼 대안은 카드에 따로 안내해요. 맛은 메뉴명·재료로 추정하며, 추가 제안은 영양 수치를 계산하지 않은 아이디어 메뉴예요.';
+      countEl.textContent = (exact.length ? '맞춤 추천 '+exact.length+'개' : '제철 메뉴로 골랐어요') + (alternatives.length ? ' · 대안 '+alternatives.length+'개' : '');
       recipesEl.replaceChildren();
-      if (recipes.length) recipesEl.append(...recipes.map(recipeCard));
-      else {
-        const empty = element('div', 'empty');
-        empty.append(element('strong', '', '앗, 이 조합은 아직 준비된 메뉴가 없어요.'), element('p', '', '위 질문에서 요리 방식이나 맛을 “상관없어요·뭐든 좋아요”로 바꾸거나, 다른 월·재료를 골라볼까요?'));
-        recipesEl.append(empty);
-      }
+      recipesEl.append(...recipes.map(recipeCard));
       recipesEl.setAttribute('aria-busy', 'false');
     }
     monthSelect.addEventListener('change', () => {
@@ -263,25 +343,23 @@
         if (!data || typeof data !== 'object' || (!Array.isArray(data.seasonal) && !Array.isArray(data.recipes) && !Array.isArray(data.supplemental?.months))) throw new Error('Invalid menu data');
         data.seasonal = Array.isArray(data.seasonal) ? data.seasonal : [];
         data.recipes = Array.isArray(data.recipes) ? data.recipes : [];
+        usingSeasonalGuide = false;
         monthSelect.disabled = false;
         document.getElementById('recommend').disabled = false;
         renderIngredients();
         renderRecipes();
       } catch (error) {
-        document.getElementById('recommendations').hidden = false;
-        document.getElementById('recommend').disabled = true;
-        recipesEl.replaceChildren();
-        countEl.textContent = '';
-        const empty = element('div', 'empty');
-        empty.setAttribute('role', 'alert');
-        empty.append(element('strong', '', '메뉴 데이터를 불러오지 못했어요.'), element('p', '', 'menu.json이 같은 폴더에 있는지 확인해 주세요.'));
-        empty.append(element('p', '', location.protocol === 'file:' ? 'fetch로 데이터를 읽으려면 VS Code의 Live Server 등으로 index.html을 열어 주세요.' : '연결을 확인하고 다시 시도해 주세요.'));
-        const retry = element('button', 'retry', '다시 불러오기');
+        data = {seasonal:[],recipes:[]};
+        usingSeasonalGuide = true;
+        monthSelect.disabled = false;
+        document.getElementById('recommend').disabled = false;
+        document.getElementById('recommendations').hidden = !submitted;
+        document.getElementById('feedback').textContent = '기본 계절 가이드로 한 끼를 함께 골라볼게요. 원본 연결도 다시 확인할 수 있어요.';
+        const retry = element('button', 'secondary', '원본 메뉴 다시 연결하기');
         retry.type = 'button';
         retry.addEventListener('click', loadMenu);
-        empty.append(retry);
-        recipesEl.append(empty);
-        recipesEl.setAttribute('aria-busy', 'false');
+        document.getElementById('feedback').append(retry);
+        renderIngredients(); renderRecipes();
       }
     }
     loadMenu();
