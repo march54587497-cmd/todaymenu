@@ -295,11 +295,11 @@
       "name": "새우 두부 계란찜",
       "category": "반찬",
       "method": "찌기",
-      "kcal": 220.0,
-      "carb": 3.0,
-      "protein": 14.0,
-      "fat": 17.0,
-      "sodium": 99.0,
+      "kcal": 220,
+      "carb": 3,
+      "protein": 14,
+      "fat": 17,
+      "sodium": 99,
       "main_ingredients": [
         "연두부",
         "칵테일새우",
@@ -327,11 +327,11 @@
       "name": "부추 콩가루 찜",
       "category": "반찬",
       "method": "찌기",
-      "kcal": 215.0,
-      "carb": 20.0,
-      "protein": 14.0,
-      "fat": 9.0,
-      "sodium": 240.0,
+      "kcal": 215,
+      "carb": 20,
+      "protein": 14,
+      "fat": 9,
+      "sodium": 240,
       "main_ingredients": [
         "조선부추",
         "날콩가루",
@@ -353,11 +353,11 @@
       "name": "방울토마토 소박이",
       "category": "반찬",
       "method": "기타",
-      "kcal": 45.0,
-      "carb": 9.0,
-      "protein": 2.0,
-      "fat": 1.0,
-      "sodium": 277.0,
+      "kcal": 45,
+      "carb": 9,
+      "protein": 2,
+      "fat": 1,
+      "sodium": 277,
       "main_ingredients": [
         "방울토마토",
         "양파",
@@ -385,11 +385,11 @@
       "name": "순두부 사과 소스 오이무침",
       "category": "반찬",
       "method": "기타",
-      "kcal": 75.0,
-      "carb": 10.0,
-      "protein": 4.0,
-      "fat": 2.0,
-      "sodium": 22.0,
+      "kcal": 75,
+      "carb": 10,
+      "protein": 4,
+      "fat": 2,
+      "sodium": 22,
       "main_ingredients": [
         "오이",
         "다진 땅콩",
@@ -419,11 +419,11 @@
       "name": "사과 새우 북엇국",
       "category": "국&찌개",
       "method": "끓이기",
-      "kcal": 65.0,
-      "carb": 2.0,
-      "protein": 12.0,
-      "fat": 1.0,
-      "sodium": 78.0,
+      "kcal": 65,
+      "carb": 2,
+      "protein": 12,
+      "fat": 1,
+      "sodium": 78,
       "main_ingredients": [
         "북어채",
         "새우",
@@ -449,11 +449,11 @@
       "name": "저염 된장으로 맛을 낸 황태해장국",
       "category": "국&찌개",
       "method": "끓이기",
-      "kcal": 100.0,
-      "carb": 12.0,
-      "protein": 13.0,
-      "fat": 0.0,
-      "sodium": 361.0,
+      "kcal": 100,
+      "carb": 12,
+      "protein": 13,
+      "fat": 0,
+      "sodium": 361,
       "main_ingredients": [
         "황태",
         "콩나물",
@@ -482,11 +482,11 @@
       "name": "된장국",
       "category": "국&찌개",
       "method": "끓이기",
-      "kcal": 20.0,
-      "carb": 3.0,
-      "protein": 2.0,
-      "fat": 0.0,
-      "sodium": 260.0,
+      "kcal": 20,
+      "carb": 3,
+      "protein": 2,
+      "fat": 0,
+      "sodium": 260,
       "main_ingredients": [
         "두부",
         "애느타리버섯",
@@ -514,11 +514,11 @@
       "name": "표고버섯 청경채국",
       "category": "국&찌개",
       "method": "끓이기",
-      "kcal": 45.0,
-      "carb": 7.0,
-      "protein": 2.0,
-      "fat": 1.0,
-      "sodium": 2441.0,
+      "kcal": 45,
+      "carb": 7,
+      "protein": 2,
+      "fat": 1,
+      "sodium": 2441,
       "main_ingredients": [
         "국물용 멸치",
         "다시마",
@@ -548,11 +548,11 @@
       "name": "호박 고구마 스프",
       "category": "일품",
       "method": "끓이기",
-      "kcal": 165.0,
-      "carb": 26.0,
-      "protein": 4.0,
-      "fat": 5.0,
-      "sodium": 77.0,
+      "kcal": 165,
+      "carb": 26,
+      "protein": 4,
+      "fat": 5,
+      "sodium": 77,
       "main_ingredients": [
         "고구마",
         "단호박",
@@ -583,11 +583,11 @@
       "name": "마늘드레싱을 곁들인 키위샐러드",
       "category": "반찬",
       "method": "기타",
-      "kcal": 350.0,
-      "carb": 36.0,
-      "protein": 13.0,
-      "fat": 17.0,
-      "sodium": 59.0,
+      "kcal": 350,
+      "carb": 36,
+      "protein": 13,
+      "fat": 17,
+      "sodium": 59,
       "main_ingredients": [
         "키위",
         "방울토마토",
@@ -614,11 +614,11 @@
       "name": "스트로베리 샐러드",
       "category": "반찬",
       "method": "기타",
-      "kcal": 195.0,
-      "carb": 30.0,
-      "protein": 7.0,
-      "fat": 5.0,
-      "sodium": 138.0,
+      "kcal": 195,
+      "carb": 30,
+      "protein": 7,
+      "fat": 5,
+      "sodium": 138,
       "main_ingredients": [
         "딸기",
         "플레인요거트",
@@ -644,11 +644,11 @@
       "name": "시금치 우유 소스와 그린매쉬드포테이토",
       "category": "반찬",
       "method": "찌기",
-      "kcal": 155.0,
-      "carb": 32.0,
-      "protein": 5.0,
-      "fat": 1.0,
-      "sodium": 24.0,
+      "kcal": 155,
+      "carb": 32,
+      "protein": 5,
+      "fat": 1,
+      "sodium": 24,
       "main_ingredients": [
         "감자",
         "시금치우유 소스",
@@ -678,11 +678,11 @@
       "name": "버섯구이와 두부타르타르 소스",
       "category": "반찬",
       "method": "굽기",
-      "kcal": 150.0,
-      "carb": 18.0,
-      "protein": 8.0,
-      "fat": 5.0,
-      "sodium": 133.0,
+      "kcal": 150,
+      "carb": 18,
+      "protein": 8,
+      "fat": 5,
+      "sodium": 133,
       "main_ingredients": [
         "새송이버섯",
         "올리브유",
@@ -704,11 +704,11 @@
       "name": "구운채소와 간장레몬 소스",
       "category": "반찬",
       "method": "굽기",
-      "kcal": 175.0,
-      "carb": 19.0,
-      "protein": 4.0,
-      "fat": 9.0,
-      "sodium": 38.0,
+      "kcal": 175,
+      "carb": 19,
+      "protein": 4,
+      "fat": 9,
+      "sodium": 38,
       "main_ingredients": [
         "가지",
         "호박",
@@ -736,11 +736,11 @@
       "name": "브로콜리 컬리플라워 샐러드와 두유 요거트 소스",
       "category": "반찬",
       "method": "기타",
-      "kcal": 210.0,
-      "carb": 30.0,
-      "protein": 9.0,
-      "fat": 6.0,
-      "sodium": 79.0,
+      "kcal": 210,
+      "carb": 30,
+      "protein": 9,
+      "fat": 6,
+      "sodium": 79,
       "main_ingredients": [
         "브로콜리",
         "컬리플라워",
@@ -770,11 +770,11 @@
       "name": "치커리샐러드와 올리브 마늘 소스",
       "category": "반찬",
       "method": "기타",
-      "kcal": 170.0,
-      "carb": 13.0,
-      "protein": 3.0,
-      "fat": 12.0,
-      "sodium": 74.0,
+      "kcal": 170,
+      "carb": 13,
+      "protein": 3,
+      "fat": 12,
+      "sodium": 74,
       "main_ingredients": [
         "치커리",
         "적양배추",
@@ -804,11 +804,11 @@
       "name": "유자향의 곤약 냉채",
       "category": "반찬",
       "method": "기타",
-      "kcal": 70.0,
-      "carb": 15.0,
-      "protein": 0.0,
-      "fat": 1.0,
-      "sodium": 15.0,
+      "kcal": 70,
+      "carb": 15,
+      "protein": 0,
+      "fat": 1,
+      "sodium": 15,
       "main_ingredients": [
         "실곤약",
         "오이",
@@ -894,7 +894,7 @@
       "category": "일품",
       "method": "찌기",
       "kcal": 123.2,
-      "carb": 19.0,
+      "carb": 19,
       "protein": 8.4,
       "fat": 1.5,
       "sodium": 167.9,
@@ -956,7 +956,7 @@
       "kcal": 35.8,
       "carb": 7.1,
       "protein": 1.8,
-      "fat": 0.0,
+      "fat": 0,
       "sodium": 34.5,
       "main_ingredients": [
         "소면",
@@ -1109,8 +1109,8 @@
       "method": "끓이기",
       "kcal": 36.9,
       "carb": 6.1,
-      "protein": 3.0,
-      "fat": 0.0,
+      "protein": 3,
+      "fat": 0,
       "sodium": 59.1,
       "main_ingredients": [
         "매실액",
@@ -1136,7 +1136,7 @@
       "kcal": 21.2,
       "carb": 4.6,
       "protein": 0.6,
-      "fat": 0.0,
+      "fat": 0,
       "sodium": 64.9,
       "main_ingredients": [
         "배추",
@@ -1168,7 +1168,7 @@
       "kcal": 24.5,
       "carb": 4.7,
       "protein": 1.4,
-      "fat": 0.0,
+      "fat": 0,
       "sodium": 171.3,
       "main_ingredients": [
         "배추",
@@ -1197,7 +1197,7 @@
       "name": "유자 대구조림",
       "category": "반찬",
       "method": "끓이기",
-      "kcal": 84.0,
+      "kcal": 84,
       "carb": 10.6,
       "protein": 9.6,
       "fat": 0.4,
@@ -1230,8 +1230,8 @@
       "kcal": 44.9,
       "carb": 10.1,
       "protein": 1.1,
-      "fat": 0.0,
-      "sodium": 272.0,
+      "fat": 0,
+      "sodium": 272,
       "main_ingredients": [
         "자색고구마",
         "무",
@@ -1263,7 +1263,7 @@
       "carb": 6.9,
       "protein": 5.1,
       "fat": 2.4,
-      "sodium": 204.0,
+      "sodium": 204,
       "main_ingredients": [
         "꼬막",
         "달래",
@@ -1422,7 +1422,7 @@
       "kcal": 67.5,
       "carb": 9.7,
       "protein": 7.1,
-      "fat": 0.0,
+      "fat": 0,
       "sodium": 12.4,
       "main_ingredients": [
         "딸기",
@@ -1713,7 +1713,7 @@
       "kcal": 741.4,
       "carb": 20.8,
       "protein": 7.8,
-      "fat": 11.0,
+      "fat": 11,
       "sodium": 216.6,
       "main_ingredients": [
         "스테이크재료 두부",
@@ -1847,7 +1847,7 @@
       "name": "대하조림",
       "category": "반찬",
       "method": "끓이기",
-      "kcal": 112.0,
+      "kcal": 112,
       "carb": 5.72,
       "protein": 10.5,
       "fat": 0.91,
@@ -1893,8 +1893,8 @@
       "kcal": 312.2,
       "carb": 7.35,
       "protein": 9.66,
-      "fat": 17.0,
-      "sodium": 141.0,
+      "fat": 17,
+      "sodium": 141,
       "main_ingredients": [
         "돼지고기",
         "가지",
@@ -1937,7 +1937,7 @@
       "method": "끓이기",
       "kcal": 167.9,
       "carb": 2.77,
-      "protein": 9.0,
+      "protein": 9,
       "fat": 0.4,
       "sodium": 460.3,
       "main_ingredients": [
@@ -2023,8 +2023,8 @@
       "category": "국&찌개",
       "method": "끓이기",
       "kcal": 88.2,
-      "carb": 2.0,
-      "protein": 1.0,
+      "carb": 2,
+      "protein": 1,
       "fat": 0.5,
       "sodium": 566.5,
       "main_ingredients": [
@@ -2115,7 +2115,7 @@
       "carb": 2.5,
       "protein": 2.4,
       "fat": 0.7,
-      "sodium": 549.0,
+      "sodium": 549,
       "main_ingredients": [
         "오징어",
         "두부",
@@ -2158,7 +2158,7 @@
       "method": "끓이기",
       "kcal": 53.9,
       "carb": 5.2,
-      "protein": 3.0,
+      "protein": 3,
       "fat": 2.3,
       "sodium": 385.1,
       "main_ingredients": [
@@ -2232,7 +2232,7 @@
       "carb": 3.99,
       "protein": 5.37,
       "fat": 3.63,
-      "sodium": 778.0,
+      "sodium": 778,
       "main_ingredients": [
         "통조림 햄",
         "우유",
@@ -2568,7 +2568,7 @@
       "method": "끓이기",
       "kcal": 28.7,
       "carb": 4.5,
-      "protein": 2.0,
+      "protein": 2,
       "fat": 0.3,
       "sodium": 77.1,
       "main_ingredients": [
@@ -2957,7 +2957,7 @@
       "carb": 26.6,
       "protein": 3.14,
       "fat": 4.86,
-      "sodium": 145.0,
+      "sodium": 145,
       "main_ingredients": [
         "라면",
         "양상추",
@@ -3027,7 +3027,7 @@
       "carb": 25.1,
       "protein": 14.9,
       "fat": 0.8,
-      "sodium": 771.0,
+      "sodium": 771,
       "main_ingredients": [
         "시금치",
         "감자",
@@ -3146,7 +3146,7 @@
       "carb": 42.1,
       "protein": 6.6,
       "fat": 8.4,
-      "sodium": 371.0,
+      "sodium": 371,
       "main_ingredients": [
         "파스타면",
         "열무김치",
@@ -3419,7 +3419,7 @@
       "method": "끓이기",
       "kcal": 134.5,
       "carb": 8.7,
-      "protein": 3.0,
+      "protein": 3,
       "fat": 9.8,
       "sodium": 112.9,
       "main_ingredients": [
@@ -3493,7 +3493,7 @@
       "category": "국&찌개",
       "method": "끓이기",
       "kcal": 53.5,
-      "carb": 1.0,
+      "carb": 1,
       "protein": 7.7,
       "fat": 2.1,
       "sodium": 298.5,
@@ -3602,7 +3602,7 @@
       "name": "비트양파김치",
       "category": "반찬",
       "method": "기타",
-      "kcal": 28.0,
+      "kcal": 28,
       "carb": 4.9,
       "protein": 1.8,
       "fat": 0.1,
@@ -3678,7 +3678,7 @@
       "category": "반찬",
       "method": "굽기",
       "kcal": 234.1,
-      "carb": 14.0,
+      "carb": 14,
       "protein": 17.7,
       "fat": 11.9,
       "sodium": 284.5,
@@ -3714,7 +3714,7 @@
       "method": "기타",
       "kcal": 53.6,
       "carb": 9.7,
-      "protein": 1.0,
+      "protein": 1,
       "fat": 1.2,
       "sodium": 109.2,
       "main_ingredients": [
@@ -3820,8 +3820,8 @@
       "method": "굽기",
       "kcal": 186.1,
       "carb": 21.5,
-      "protein": 16.0,
-      "fat": 4.0,
+      "protein": 16,
+      "fat": 4,
       "sodium": 460.7,
       "main_ingredients": [
         "장어",
@@ -3858,7 +3858,7 @@
       "category": "일품",
       "method": "끓이기",
       "kcal": 282.6,
-      "carb": 37.0,
+      "carb": 37,
       "protein": 10.4,
       "fat": 10.4,
       "sodium": 41.4,
@@ -3935,7 +3935,7 @@
       "category": "후식",
       "method": "굽기",
       "kcal": 196.3,
-      "carb": 47.0,
+      "carb": 47,
       "protein": 1.3,
       "fat": 0.3,
       "sodium": 21.6,
@@ -3969,7 +3969,7 @@
       "name": "웰빙스테이크",
       "category": "일품",
       "method": "굽기",
-      "kcal": 273.0,
+      "kcal": 273,
       "carb": 19.2,
       "protein": 19.2,
       "fat": 13.2,
@@ -4012,7 +4012,7 @@
       "category": "일품",
       "method": "굽기",
       "kcal": 213.5,
-      "carb": 25.0,
+      "carb": 25,
       "protein": 17.9,
       "fat": 4.7,
       "sodium": 295.4,
@@ -4240,7 +4240,7 @@
       "name": "장어수육구이",
       "category": "반찬",
       "method": "굽기",
-      "kcal": 129.0,
+      "kcal": 129,
       "carb": 3.9,
       "protein": 15.2,
       "fat": 5.9,
@@ -4311,11 +4311,11 @@
       "name": "주꾸미머리순대",
       "category": "반찬",
       "method": "찌기",
-      "kcal": 60.0,
+      "kcal": 60,
       "carb": 0.8,
       "protein": 11.8,
       "fat": 1.1,
-      "sodium": 122.0,
+      "sodium": 122,
       "main_ingredients": [
         "주꾸미",
         "미나리",
@@ -4352,7 +4352,7 @@
       "kcal": 76.8,
       "carb": 18.4,
       "protein": 0.7,
-      "fat": 0.0,
+      "fat": 0,
       "sodium": 79.2,
       "main_ingredients": [
         "무",
@@ -4433,7 +4433,7 @@
       "carb": 19.7,
       "protein": 9.4,
       "fat": 7.6,
-      "sodium": 135.0,
+      "sodium": 135,
       "main_ingredients": [
         "두부",
         "전분",
@@ -4536,7 +4536,7 @@
       "name": "논우렁순무섞박지",
       "category": "반찬",
       "method": "기타",
-      "kcal": 103.0,
+      "kcal": 103,
       "carb": 18.6,
       "protein": 6.5,
       "fat": 0.3,
@@ -4572,9 +4572,9 @@
       "category": "반찬",
       "method": "끓이기",
       "kcal": 190.1,
-      "carb": 21.0,
+      "carb": 21,
       "protein": 14.1,
-      "fat": 505.0,
+      "fat": 505,
       "sodium": 1236.7,
       "main_ingredients": [
         "장어",
@@ -4641,9 +4641,9 @@
       "name": "불고기미니볼",
       "category": "반찬",
       "method": "튀기기",
-      "kcal": 346.0,
+      "kcal": 346,
       "carb": 32.9,
-      "protein": 15.0,
+      "protein": 15,
       "fat": 17.2,
       "sodium": 120.8,
       "main_ingredients": [
@@ -4684,7 +4684,7 @@
       "carb": 17.3,
       "protein": 1.6,
       "fat": 0.6,
-      "sodium": 106.0,
+      "sodium": 106,
       "main_ingredients": [
         "연근",
         "당근",
@@ -4721,7 +4721,7 @@
       "kcal": 274.4,
       "carb": 13.2,
       "protein": 17.1,
-      "fat": 17.0,
+      "fat": 17,
       "sodium": 365.3,
       "main_ingredients": [
         "황태채",
@@ -4847,7 +4847,7 @@
       "kcal": 327.4,
       "carb": 48.7,
       "protein": 21.8,
-      "fat": 5.0,
+      "fat": 5,
       "sodium": 172.7,
       "main_ingredients": [
         "주꾸미",
@@ -5060,7 +5060,7 @@
       "kcal": 588.5,
       "carb": 40.1,
       "protein": 14.8,
-      "fat": 41.0,
+      "fat": 41,
       "sodium": 362.3,
       "main_ingredients": [
         "감자",
@@ -5182,7 +5182,7 @@
       "category": "반찬",
       "method": "굽기",
       "kcal": 420.4,
-      "carb": 8.0,
+      "carb": 8,
       "protein": 30.4,
       "fat": 29.6,
       "sodium": 193.2,
@@ -5231,7 +5231,7 @@
       "category": "반찬",
       "method": "굽기",
       "kcal": 498.2,
-      "carb": 35.0,
+      "carb": 35,
       "protein": 45.3,
       "fat": 19.7,
       "sodium": 159.9,
@@ -5315,7 +5315,7 @@
       "method": "찌기",
       "kcal": 110.1,
       "carb": 24.1,
-      "protein": 0.0,
+      "protein": 0,
       "fat": 1.5,
       "sodium": 242.1,
       "main_ingredients": [
@@ -5405,7 +5405,7 @@
       "carb": 16.2,
       "protein": 10.4,
       "fat": 8.7,
-      "sodium": 202.0,
+      "sodium": 202,
       "main_ingredients": [
         "애호박",
         "소금",
@@ -5710,7 +5710,7 @@
       "category": "일품",
       "method": "끓이기",
       "kcal": 342.8,
-      "carb": 51.0,
+      "carb": 51,
       "protein": 12.8,
       "fat": 9.7,
       "sodium": 218.4,
@@ -5782,7 +5782,7 @@
       "category": "반찬",
       "method": "볶기",
       "kcal": 183.4,
-      "carb": 21.0,
+      "carb": 21,
       "protein": 15.1,
       "fat": 4.3,
       "sodium": 235.5,
@@ -5871,7 +5871,7 @@
       "kcal": 381.2,
       "carb": 75.9,
       "protein": 5.9,
-      "fat": 6.0,
+      "fat": 6,
       "sodium": 341.2,
       "main_ingredients": [
         "옥수수콘",
@@ -5910,7 +5910,7 @@
       "category": "후식",
       "method": "끓이기",
       "kcal": 320.6,
-      "carb": 73.0,
+      "carb": 73,
       "protein": 6.1,
       "fat": 0.5,
       "sodium": 47.2,
@@ -5991,9 +5991,9 @@
       "category": "반찬",
       "method": "기타",
       "kcal": 177.4,
-      "carb": 10.0,
+      "carb": 10,
       "protein": 25.3,
-      "fat": 4.0,
+      "fat": 4,
       "sodium": 245.6,
       "main_ingredients": [
         "소고기",
@@ -6035,7 +6035,7 @@
       "method": "볶기",
       "kcal": 286.6,
       "carb": 32.5,
-      "protein": 14.0,
+      "protein": 14,
       "fat": 11.2,
       "sodium": 191.4,
       "main_ingredients": [
@@ -6106,7 +6106,7 @@
       "method": "찌기",
       "kcal": 107.6,
       "carb": 0.8,
-      "protein": 9.0,
+      "protein": 9,
       "fat": 7.6,
       "sodium": 178.3,
       "main_ingredients": [
@@ -6141,10 +6141,10 @@
       "name": "단호박생채",
       "category": "반찬",
       "method": "기타",
-      "kcal": 167.0,
+      "kcal": 167,
       "carb": 36.2,
       "protein": 3.4,
-      "fat": 1.0,
+      "fat": 1,
       "sodium": 953.1,
       "main_ingredients": [
         "단호박",
@@ -6184,7 +6184,7 @@
       "category": "반찬",
       "method": "끓이기",
       "kcal": 321.7,
-      "carb": 8.0,
+      "carb": 8,
       "protein": 47.9,
       "fat": 10.9,
       "sodium": 347.3,
@@ -6222,8 +6222,8 @@
       "name": "설렁탕쑥떡볶이",
       "category": "국&찌개",
       "method": "끓이기",
-      "kcal": 350.0,
-      "carb": 48.0,
+      "kcal": 350,
+      "carb": 48,
       "protein": 16.8,
       "fat": 10.1,
       "sodium": 296.4,
@@ -6266,10 +6266,10 @@
       "category": "일품",
       "method": "찌기",
       "kcal": 326.3,
-      "carb": 43.0,
+      "carb": 43,
       "protein": 22.3,
       "fat": 7.2,
-      "sodium": 976.0,
+      "sodium": 976,
       "main_ingredients": [
         "돼지고기",
         "배춧잎",
@@ -6305,10 +6305,10 @@
       "category": "반찬",
       "method": "굽기",
       "kcal": 253.3,
-      "carb": 15.0,
+      "carb": 15,
       "protein": 26.9,
       "fat": 9.5,
-      "sodium": 196.0,
+      "sodium": 196,
       "main_ingredients": [
         "소고기",
         "돼지고기",
@@ -6393,7 +6393,7 @@
       "method": "끓이기",
       "kcal": 314.1,
       "carb": 53.7,
-      "protein": 16.0,
+      "protein": 16,
       "fat": 3.9,
       "sodium": 55.9,
       "main_ingredients": [
@@ -6468,7 +6468,7 @@
       "name": "훈제오리가슴살크러스트",
       "category": "반찬",
       "method": "굽기",
-      "kcal": 250.0,
+      "kcal": 250,
       "carb": 13.5,
       "protein": 17.2,
       "fat": 14.1,
@@ -6550,7 +6550,7 @@
       "kcal": 343.6,
       "carb": 68.1,
       "protein": 11.2,
-      "fat": 3.0,
+      "fat": 3,
       "sodium": 633.5,
       "main_ingredients": [
         "검은콩",
@@ -6593,7 +6593,7 @@
       "method": "찌기",
       "kcal": 38.5,
       "carb": 6.2,
-      "protein": 2.0,
+      "protein": 2,
       "fat": 0.6,
       "sodium": 329.2,
       "main_ingredients": [
@@ -6713,7 +6713,7 @@
       "name": "묵은지고등어와 새우말이꼬치",
       "category": "반찬",
       "method": "끓이기",
-      "kcal": 403.0,
+      "kcal": 403,
       "carb": 22.3,
       "protein": 41.5,
       "fat": 16.4,
@@ -6747,7 +6747,7 @@
       "name": "산나물 유부초밥",
       "category": "밥",
       "method": "끓이기",
-      "kcal": 304.0,
+      "kcal": 304,
       "carb": 51.8,
       "protein": 10.4,
       "fat": 6.1,
@@ -6866,8 +6866,8 @@
       "name": "야채찜을 곁들인 광어스테이크",
       "category": "일품",
       "method": "찌기",
-      "kcal": 259.0,
-      "carb": 16.0,
+      "kcal": 259,
+      "carb": 16,
       "protein": 18.9,
       "fat": 13.2,
       "sodium": 398.9,
@@ -6941,9 +6941,9 @@
       "category": "밥",
       "method": "끓이기",
       "kcal": 379.4,
-      "carb": 77.0,
-      "protein": 9.0,
-      "fat": 4.0,
+      "carb": 77,
+      "protein": 9,
+      "fat": 4,
       "sodium": 522.8,
       "main_ingredients": [
         "돼지고기",
@@ -7062,7 +7062,7 @@
       "name": "크림소스치킨롤",
       "category": "일품",
       "method": "끓이기",
-      "kcal": 401.0,
+      "kcal": 401,
       "carb": 10.9,
       "protein": 24.6,
       "fat": 28.8,
@@ -7181,7 +7181,7 @@
       "carb": 6.8,
       "protein": 5.2,
       "fat": 0.8,
-      "sodium": 404.0,
+      "sodium": 404,
       "main_ingredients": [
         "감자",
         "느타리버섯",
@@ -7248,7 +7248,7 @@
       "kcal": 41.2,
       "carb": 1.2,
       "protein": 0.6,
-      "fat": 4.0,
+      "fat": 4,
       "sodium": 339.1,
       "main_ingredients": [
         "수박 속껍질",
@@ -7346,7 +7346,7 @@
       "name": "양배추두부찜과 양파케첩소스",
       "category": "반찬",
       "method": "찌기",
-      "kcal": 165.0,
+      "kcal": 165,
       "carb": 14.1,
       "protein": 10.7,
       "fat": 7.2,
@@ -7371,7 +7371,7 @@
       "name": "애호박장떡말이밥",
       "category": "밥",
       "method": "굽기",
-      "kcal": 400.0,
+      "kcal": 400,
       "carb": 82.8,
       "protein": 9.3,
       "fat": 4.5,
@@ -7408,7 +7408,7 @@
       "method": "볶기",
       "kcal": 295.8,
       "carb": 57.9,
-      "protein": 6.0,
+      "protein": 6,
       "fat": 3.9,
       "sodium": 240.3,
       "main_ingredients": [
@@ -7441,7 +7441,7 @@
       "name": "달래두부김치무침",
       "category": "반찬",
       "method": "굽기",
-      "kcal": 59.0,
+      "kcal": 59,
       "carb": 4.2,
       "protein": 4.6,
       "fat": 2.9,
@@ -7512,10 +7512,10 @@
       "category": "반찬",
       "method": "굽기",
       "kcal": 105.2,
-      "carb": 1.0,
+      "carb": 1,
       "protein": 6.8,
       "fat": 7.9,
-      "sodium": 165.0,
+      "sodium": 165,
       "main_ingredients": [
         "달걀",
         "쑥",
@@ -7548,7 +7548,7 @@
       "method": "끓이기",
       "kcal": 445.2,
       "carb": 64.3,
-      "protein": 9.0,
+      "protein": 9,
       "fat": 16.3,
       "sodium": 419.7,
       "main_ingredients": [
@@ -7579,7 +7579,7 @@
       "name": "꽃게살국",
       "category": "국&찌개",
       "method": "끓이기",
-      "kcal": 114.0,
+      "kcal": 114,
       "carb": 5.3,
       "protein": 14.2,
       "fat": 3.9,
@@ -7713,7 +7713,7 @@
       "name": "낙지브로콜리볶음",
       "category": "반찬",
       "method": "볶기",
-      "kcal": 92.0,
+      "kcal": 92,
       "carb": 5.7,
       "protein": 10.2,
       "fat": 3.4,
@@ -7750,7 +7750,7 @@
       "method": "굽기",
       "kcal": 184.2,
       "carb": 6.2,
-      "protein": 11.0,
+      "protein": 11,
       "fat": 12.8,
       "sodium": 233.5,
       "main_ingredients": [
@@ -7817,7 +7817,7 @@
       "kcal": 78.7,
       "carb": 4.8,
       "protein": 5.4,
-      "fat": 4.0,
+      "fat": 4,
       "sodium": 318.4,
       "main_ingredients": [
         "표고버섯",
@@ -8172,7 +8172,7 @@
       "kcal": 85.4,
       "carb": 10.6,
       "protein": 9.3,
-      "fat": 1.0,
+      "fat": 1,
       "sodium": 424.8,
       "main_ingredients": [
         "키조개관자",
@@ -8235,7 +8235,7 @@
       "name": "달래바싹불고기",
       "category": "반찬",
       "method": "굽기",
-      "kcal": 197.0,
+      "kcal": 197,
       "carb": 5.3,
       "protein": 13.4,
       "fat": 13.4,
@@ -8297,9 +8297,9 @@
       "name": "딸기연두부쉐이크",
       "category": "후식",
       "method": "기타",
-      "kcal": 121.0,
+      "kcal": 121,
       "carb": 25.3,
-      "protein": 4.0,
+      "protein": 4,
       "fat": 1.5,
       "sodium": 5.5,
       "main_ingredients": [
@@ -8369,8 +8369,8 @@
       "kcal": 134.6,
       "carb": 23.9,
       "protein": 2.4,
-      "fat": 4.0,
-      "sodium": 163.0,
+      "fat": 4,
+      "sodium": 163,
       "main_ingredients": [
         "도라지",
         "검은깨",
@@ -8403,9 +8403,9 @@
       "method": "굽기",
       "kcal": 118.4,
       "carb": 14.7,
-      "protein": 7.0,
-      "fat": 4.0,
-      "sodium": 49.0,
+      "protein": 7,
+      "fat": 4,
+      "sodium": 49,
       "main_ingredients": [
         "대두",
         "시레기",
@@ -8441,7 +8441,7 @@
       "carb": 15.3,
       "protein": 11.3,
       "fat": 10.3,
-      "sodium": 163.0,
+      "sodium": 163,
       "main_ingredients": [
         "쇠고기등심",
         "양송이버섯",
@@ -8470,7 +8470,7 @@
       "carb": 3.5,
       "protein": 4.8,
       "fat": 2.8,
-      "sodium": 257.0,
+      "sodium": 257,
       "main_ingredients": [
         "굴",
         "두부",
@@ -8499,11 +8499,11 @@
       "name": "꽃게강정",
       "category": "반찬",
       "method": "튀기기",
-      "kcal": 261.0,
+      "kcal": 261,
       "carb": 21.9,
       "protein": 17.6,
       "fat": 11.1,
-      "sodium": 470.0,
+      "sodium": 470,
       "main_ingredients": [
         "꽃게",
         "후춧가루",
@@ -8536,7 +8536,7 @@
       "carb": 17.6,
       "protein": 8.8,
       "fat": 13.1,
-      "sodium": 181.0,
+      "sodium": 181,
       "main_ingredients": [
         "멸치중간것",
         "찹쌀가루",
@@ -8569,7 +8569,7 @@
       "carb": 8.5,
       "protein": 11.6,
       "fat": 38.7,
-      "sodium": 362.0,
+      "sodium": 362,
       "main_ingredients": [
         "연두부",
         "아보카도작은것",
@@ -8631,7 +8631,7 @@
       "carb": 24.3,
       "protein": 1.6,
       "fat": 0.3,
-      "sodium": 7.0,
+      "sodium": 7,
       "main_ingredients": [
         "복숭아",
         "식혜",
@@ -8660,11 +8660,11 @@
       "name": "과일 주스 조림",
       "category": "후식",
       "method": "기타",
-      "kcal": 182.0,
+      "kcal": 182,
       "carb": 39.4,
       "protein": 1.5,
       "fat": 0.5,
-      "sodium": 7.0,
+      "sodium": 7,
       "main_ingredients": [
         "천도복숭아",
         "자두",
@@ -8693,11 +8693,11 @@
       "name": "대구 크림스튜",
       "category": "반찬",
       "method": "끓이기",
-      "kcal": 186.0,
+      "kcal": 186,
       "carb": 4.4,
       "protein": 28.1,
       "fat": 5.5,
-      "sodium": 406.0,
+      "sodium": 406,
       "main_ingredients": [
         "양파다진것",
         "청피망다진것",
@@ -8722,11 +8722,11 @@
       "name": "바질 고구마 옥수수빵(플렌타)",
       "category": "후식",
       "method": "찌기",
-      "kcal": 161.0,
+      "kcal": 161,
       "carb": 23.3,
       "protein": 7.8,
       "fat": 4.6,
-      "sodium": 229.0,
+      "sodium": 229,
       "main_ingredients": [
         "시금치",
         "바질",
@@ -8756,11 +8756,11 @@
       "name": "해산물 옥수수 오븐구이",
       "category": "반찬",
       "method": "굽기",
-      "kcal": 112.0,
+      "kcal": 112,
       "carb": 8.5,
-      "protein": 9.0,
+      "protein": 9,
       "fat": 4.7,
-      "sodium": 211.0,
+      "sodium": 211,
       "main_ingredients": [
         "달걀",
         "새우",
@@ -8791,11 +8791,11 @@
       "name": "멸치 누룽지과자",
       "category": "후식",
       "method": "굽기",
-      "kcal": 191.0,
+      "kcal": 191,
       "carb": 29.4,
       "protein": 11.6,
-      "fat": 4.0,
-      "sodium": 177.0,
+      "fat": 4,
+      "sodium": 177,
       "main_ingredients": [
         "밥",
         "잔멸치",
@@ -8820,11 +8820,11 @@
       "name": "복숭아 화채",
       "category": "후식",
       "method": "기타",
-      "kcal": 73.0,
+      "kcal": 73,
       "carb": 16.7,
       "protein": 1.3,
       "fat": 1.2,
-      "sodium": 2.0,
+      "sodium": 2,
       "main_ingredients": [
         "오미자",
         "천도복숭아",
@@ -8855,11 +8855,11 @@
       "name": "사과 포도주스 조림",
       "category": "후식",
       "method": "끓이기",
-      "kcal": 135.0,
+      "kcal": 135,
       "carb": 25.1,
       "protein": 1.8,
       "fat": 4.2,
-      "sodium": 25.0,
+      "sodium": 25,
       "main_ingredients": [
         "사과",
         "포도주스",
@@ -8888,11 +8888,11 @@
       "name": "사과와 양파를 곁들인 돼지등심 요리",
       "category": "반찬",
       "method": "굽기",
-      "kcal": 294.0,
-      "carb": 6.0,
+      "kcal": 294,
+      "carb": 6,
       "protein": 17.9,
-      "fat": 21.0,
-      "sodium": 36.0,
+      "fat": 21,
+      "sodium": 36,
       "main_ingredients": [
         "돼지등심",
         "오레가노마른것",
@@ -8917,11 +8917,11 @@
       "name": "낫토 시래기 라이스전",
       "category": "후식",
       "method": "굽기",
-      "kcal": 138.0,
+      "kcal": 138,
       "carb": 22.9,
       "protein": 6.3,
       "fat": 2.9,
-      "sodium": 163.0,
+      "sodium": 163,
       "main_ingredients": [
         "밥",
         "양파다진것",
@@ -8950,11 +8950,11 @@
       "name": "다시마전",
       "category": "반찬",
       "method": "굽기",
-      "kcal": 79.0,
+      "kcal": 79,
       "carb": 13.2,
       "protein": 4.3,
       "fat": 1.6,
-      "sodium": 311.0,
+      "sodium": 311,
       "main_ingredients": [
         "다시마",
         "영양부추",
@@ -8979,11 +8979,11 @@
       "name": "모듬옥수수",
       "category": "반찬",
       "method": "굽기",
-      "kcal": 127.0,
-      "carb": 15.0,
+      "kcal": 127,
+      "carb": 15,
       "protein": 9.9,
       "fat": 3.6,
-      "sodium": 109.0,
+      "sodium": 109,
       "main_ingredients": [
         "옥수수",
         "잣",
@@ -9014,11 +9014,11 @@
       "name": "바지락 볶음면",
       "category": "일품",
       "method": "볶기",
-      "kcal": 235.0,
+      "kcal": 235,
       "carb": 36.3,
       "protein": 12.6,
-      "fat": 4.0,
-      "sodium": 448.0,
+      "fat": 4,
+      "sodium": 448,
       "main_ingredients": [
         "바지락살",
         "칵테일새우",
@@ -9047,11 +9047,11 @@
       "name": "꽃게볶음",
       "category": "반찬",
       "method": "튀기기",
-      "kcal": 109.0,
+      "kcal": 109,
       "carb": 10.1,
       "protein": 10.3,
       "fat": 2.9,
-      "sodium": 317.0,
+      "sodium": 317,
       "main_ingredients": [
         "꽃게",
         "청주",
@@ -9076,11 +9076,11 @@
       "name": "다시마칩",
       "category": "후식",
       "method": "튀기기",
-      "kcal": 61.0,
+      "kcal": 61,
       "carb": 10.3,
       "protein": 1.6,
       "fat": 2.5,
-      "sodium": 139.0,
+      "sodium": 139,
       "main_ingredients": [
         "다시마",
         "꿀",
@@ -9182,7 +9182,7 @@
       "category": "반찬",
       "method": "기타",
       "kcal": 94.02,
-      "carb": 20.0,
+      "carb": 20,
       "protein": 1.33,
       "fat": 0.97,
       "sodium": 9.56,
@@ -9254,7 +9254,7 @@
       "kcal": 139.65,
       "carb": 2.05,
       "protein": 11.12,
-      "fat": 13.0,
+      "fat": 13,
       "sodium": 155.03,
       "main_ingredients": [
         "삼치",
@@ -9313,7 +9313,7 @@
       "name": "콜라비 깍두기",
       "category": "반찬",
       "method": "기타",
-      "kcal": 14.0,
+      "kcal": 14,
       "carb": 2.6,
       "protein": 0.6,
       "fat": 0.2,
@@ -9448,7 +9448,7 @@
       "kcal": 173.3,
       "carb": 7.3,
       "protein": 11.3,
-      "fat": 11.0,
+      "fat": 11,
       "sodium": 148.2,
       "main_ingredients": [
         "닭다리살",
@@ -9609,7 +9609,7 @@
       "name": "과일퓨레수제함박스테이크",
       "category": "반찬",
       "method": "굽기",
-      "kcal": 166.0,
+      "kcal": 166,
       "carb": 14.9,
       "protein": 11.7,
       "fat": 6.6,
@@ -9749,7 +9749,7 @@
       "method": "튀기기",
       "kcal": 591.6,
       "carb": 39.6,
-      "protein": 17.0,
+      "protein": 17,
       "fat": 40.6,
       "sodium": 135.9,
       "main_ingredients": [
@@ -9806,7 +9806,7 @@
       "category": "반찬",
       "method": "굽기",
       "kcal": 84.8,
-      "carb": 12.0,
+      "carb": 12,
       "protein": 2.2,
       "fat": 3.1,
       "sodium": 263.9,
@@ -9943,7 +9943,7 @@
       "name": "시금치크림치즈 빵",
       "category": "기타",
       "method": "기타",
-      "kcal": 303.0,
+      "kcal": 303,
       "carb": 36.07,
       "protein": 9.2,
       "fat": 13.54,
@@ -10176,7 +10176,7 @@
       "name": "단호박 양파잼 샌드위치",
       "category": "기타",
       "method": "기타",
-      "kcal": 287.0,
+      "kcal": 287,
       "carb": 41.8,
       "protein": 10.5,
       "fat": 8.6,
@@ -10248,7 +10248,7 @@
       "category": "반찬",
       "method": "튀기기",
       "kcal": 277.3,
-      "carb": 8.0,
+      "carb": 8,
       "protein": 14.5,
       "fat": 20.8,
       "sodium": 201.2,
@@ -10349,7 +10349,7 @@
       "category": "반찬",
       "method": "굽기",
       "kcal": 73.8,
-      "carb": 25.0,
+      "carb": 25,
       "protein": 6.8,
       "fat": 4.1,
       "sodium": 54.3,
@@ -10379,7 +10379,7 @@
       "method": "기타",
       "kcal": 13.7,
       "carb": 2.2,
-      "protein": 1.0,
+      "protein": 1,
       "fat": 0.1,
       "sodium": 379.3,
       "main_ingredients": [
@@ -10413,7 +10413,7 @@
       "kcal": 152.8,
       "carb": 16.6,
       "protein": 5.9,
-      "fat": 7.0,
+      "fat": 7,
       "sodium": 43.2,
       "main_ingredients": [
         "> 달걀흰자",
@@ -10498,5 +10498,885 @@
       "tip": "1. 건다시마, 가다랑어포의 감칠맛을 활용하여 심심한 맛을 보완했어요.\n2. 향신 재료인 달래, 들기름을 활용하여 풍미를 높여 나트륨 사용량을 줄였어요.\n3. 유자청, 양파가루를 활용하여 당류 사용량을 줄였어요.",
       "image": "https://www.foodsafetykorea.go.kr/uploadimg/20260724/20260724060127_1784883687558.jpg"
     }
-  ]
+  ],
+  "recommendation_policy": {
+    "min_seasonal_ingredients": 5,
+    "min_registered_recipes": 20,
+    "min_filtered_recipes": 3,
+    "note": "추천 폭을 위한 서비스 운영 기준이며 영양학적 기준이 아닙니다.",
+    "reviewed_on": "2026-11-05"
+  },
+  "supplemental": {
+    "notice": "계절 자료를 참고해 서비스에서 구성한 추가 제안입니다. 원자료의 등록 레시피가 아니며 영양 수치는 산출하지 않았습니다. 제철 시기는 산지·기후·재배 방식에 따라 달라질 수 있어요.",
+    "sources": [
+      {
+        "title": "농촌진흥청 농사로 · 이달의 식재료",
+        "url": "https://www.nongsaro.go.kr/portal/ps/psr/psrb/monthFdLst.ps"
+      },
+      {
+        "title": "농촌진흥청 · 봄나물 이야기",
+        "url": "https://www.rda.go.kr/middlePopOpenPopNongsaroDBView.do?no=1123"
+      },
+      {
+        "title": "제주도의회 · 월동채소 자료",
+        "url": "https://record.council.jeju.kr/CLRecords/Files/FileAppendix/a10/A023508.pdf"
+      },
+      {
+        "title": "제주관광공사 · 계절별 제주 기후",
+        "url": "https://www.visitjeju.net/pdf/Official%20Jeju%20Tourism%20Guidebook_kr.pdf"
+      }
+    ],
+    "months": [
+      {
+        "month": 1,
+        "ingredients": [
+          "무",
+          "당근",
+          "브로콜리",
+          "시금치",
+          "감귤"
+        ],
+        "climate": "찬 바람이 부는 겨울에는 제주 월동채소를 따뜻하게 조리해요.",
+        "recipes": [
+          {
+            "id": "supplement-1-1",
+            "name": "월동무·당근 두부국",
+            "category": "일품",
+            "method": "끓이기",
+            "main_ingredients": [
+              "무",
+              "당근",
+              "두부"
+            ],
+            "seasonal": [
+              "무",
+              "당근"
+            ],
+            "months": [
+              1
+            ],
+            "ingredients_text": "2인분 제안: 무 150g, 당근 80g, 두부 200g, 양파 50g, 표고버섯 20g, 물 적당량, 레몬즙 또는 들깨가루 소량",
+            "steps": [
+              "채소를 씻어 한입 크기로 썰고 단백질 재료를 손질해요.",
+              "물에 양파와 표고버섯을 넣고 끓인 뒤 주재료를 넣어 익혀요.",
+              "두부와 채소가 고루 익으면 불을 꺼요.",
+              "그릇에 담고 향과 감칠맛을 살려 마무리해요. 밥을 곁들이면 한 끼로 즐길 수 있어요."
+            ],
+            "tip": "소금·간장 대신 양파와 표고버섯의 감칠맛을 먼저 활용해요. 레몬즙과 들깨가루를 조금 곁들여 풍미를 더하고, 양념은 마지막에 소량만 넣어요.",
+            "protein_pairing": "두부",
+            "image": null,
+            "supplemental": true
+          },
+          {
+            "id": "supplement-1-2",
+            "name": "브로콜리 시금치 달걀찜",
+            "category": "일품",
+            "method": "찌기",
+            "main_ingredients": [
+              "브로콜리",
+              "시금치",
+              "달걀"
+            ],
+            "seasonal": [
+              "브로콜리",
+              "시금치"
+            ],
+            "months": [
+              1
+            ],
+            "ingredients_text": "2인분 제안: 브로콜리 150g, 시금치 80g, 달걀 200g, 양파 50g, 표고버섯 20g, 물 적당량, 레몬즙 또는 들깨가루 소량",
+            "steps": [
+              "채소를 씻어 잘게 썰고, 달걀은 깨서 고루 풀어요.",
+              "푼 달걀에 물 150ml와 채소를 섞어 내열 그릇에 담고 찜기에 넣어 익혀요.",
+              "달걀은 흰자와 노른자가 완전히 굳을 때까지 익혀요.",
+              "그릇에 담고 향과 감칠맛을 살려 마무리해요. 밥을 곁들이면 한 끼로 즐길 수 있어요."
+            ],
+            "tip": "소금·간장 대신 양파와 표고버섯의 감칠맛을 먼저 활용해요. 레몬즙과 들깨가루를 조금 곁들여 풍미를 더하고, 양념은 마지막에 소량만 넣어요.",
+            "protein_pairing": "달걀",
+            "image": null,
+            "supplemental": true
+          }
+        ]
+      },
+      {
+        "month": 2,
+        "ingredients": [
+          "봄동",
+          "시금치",
+          "당근",
+          "양배추",
+          "감귤"
+        ],
+        "climate": "늦겨울의 월동채소에 단백질 재료를 곁들여요.",
+        "recipes": [
+          {
+            "id": "supplement-2-1",
+            "name": "봄동 당근 닭고기찜",
+            "category": "일품",
+            "method": "찌기",
+            "main_ingredients": [
+              "봄동",
+              "당근",
+              "닭고기"
+            ],
+            "seasonal": [
+              "봄동",
+              "당근"
+            ],
+            "months": [
+              2
+            ],
+            "ingredients_text": "2인분 제안: 봄동 150g, 당근 80g, 닭고기 200g, 양파 50g, 표고버섯 20g, 물 적당량, 레몬즙 또는 들깨가루 소량",
+            "steps": [
+              "채소를 씻어 한입 크기로 썰고 단백질 재료를 손질해요.",
+              "내열 그릇에 손질한 재료와 물을 조금 담아 찜기에 넣고 속까지 익혀요.",
+              "닭고기는 중심까지 완전히 익혀요.",
+              "그릇에 담고 향과 감칠맛을 살려 마무리해요. 밥을 곁들이면 한 끼로 즐길 수 있어요."
+            ],
+            "tip": "소금·간장 대신 양파와 표고버섯의 감칠맛을 먼저 활용해요. 레몬즙과 들깨가루를 조금 곁들여 풍미를 더하고, 양념은 마지막에 소량만 넣어요.",
+            "protein_pairing": "닭고기",
+            "image": null,
+            "supplemental": true
+          },
+          {
+            "id": "supplement-2-2",
+            "name": "시금치 양배추 두부전",
+            "category": "일품",
+            "method": "굽기",
+            "main_ingredients": [
+              "시금치",
+              "양배추",
+              "두부"
+            ],
+            "seasonal": [
+              "시금치",
+              "양배추"
+            ],
+            "months": [
+              2
+            ],
+            "ingredients_text": "2인분 제안: 시금치 150g, 양배추 80g, 두부 200g, 양파 50g, 표고버섯 20g, 물 적당량, 레몬즙 또는 들깨가루 소량, 식용유 1작은술",
+            "steps": [
+              "채소를 씻어 한입 크기로 썰고 단백질 재료를 손질해요.",
+              "팬에 식용유를 조금 두르고 재료를 넣어 타지 않게 뒤집거나 저으며 익혀요.",
+              "두부와 채소가 고루 익으면 불을 꺼요.",
+              "그릇에 담고 향과 감칠맛을 살려 마무리해요. 밥을 곁들이면 한 끼로 즐길 수 있어요."
+            ],
+            "tip": "소금·간장 대신 양파와 표고버섯의 감칠맛을 먼저 활용해요. 레몬즙과 들깨가루를 조금 곁들여 풍미를 더하고, 양념은 마지막에 소량만 넣어요.",
+            "protein_pairing": "두부",
+            "image": null,
+            "supplemental": true
+          }
+        ]
+      },
+      {
+        "month": 3,
+        "ingredients": [
+          "냉이",
+          "봄동",
+          "달래",
+          "딸기",
+          "양배추"
+        ],
+        "climate": "일교차가 큰 봄에는 향긋한 봄나물과 따뜻한 한 끼를 준비해요.",
+        "recipes": [
+          {
+            "id": "supplement-3-1",
+            "name": "냉이 달래 두부국",
+            "category": "일품",
+            "method": "끓이기",
+            "main_ingredients": [
+              "냉이",
+              "달래",
+              "두부"
+            ],
+            "seasonal": [
+              "냉이",
+              "달래"
+            ],
+            "months": [
+              3
+            ],
+            "ingredients_text": "2인분 제안: 냉이 150g, 달래 80g, 두부 200g, 양파 50g, 표고버섯 20g, 물 적당량, 레몬즙 또는 들깨가루 소량",
+            "steps": [
+              "채소를 씻어 한입 크기로 썰고 단백질 재료를 손질해요.",
+              "물에 양파와 표고버섯을 넣고 끓인 뒤 주재료를 넣어 익혀요.",
+              "두부와 채소가 고루 익으면 불을 꺼요.",
+              "그릇에 담고 향과 감칠맛을 살려 마무리해요. 밥을 곁들이면 한 끼로 즐길 수 있어요."
+            ],
+            "tip": "소금·간장 대신 양파와 표고버섯의 감칠맛을 먼저 활용해요. 레몬즙과 들깨가루를 조금 곁들여 풍미를 더하고, 양념은 마지막에 소량만 넣어요.",
+            "protein_pairing": "두부",
+            "image": null,
+            "supplemental": true
+          },
+          {
+            "id": "supplement-3-2",
+            "name": "봄동 양배추 닭고기찜",
+            "category": "일품",
+            "method": "찌기",
+            "main_ingredients": [
+              "봄동",
+              "양배추",
+              "닭고기"
+            ],
+            "seasonal": [
+              "봄동",
+              "양배추"
+            ],
+            "months": [
+              3
+            ],
+            "ingredients_text": "2인분 제안: 봄동 150g, 양배추 80g, 닭고기 200g, 양파 50g, 표고버섯 20g, 물 적당량, 레몬즙 또는 들깨가루 소량",
+            "steps": [
+              "채소를 씻어 한입 크기로 썰고 단백질 재료를 손질해요.",
+              "내열 그릇에 손질한 재료와 물을 조금 담아 찜기에 넣고 속까지 익혀요.",
+              "닭고기는 중심까지 완전히 익혀요.",
+              "그릇에 담고 향과 감칠맛을 살려 마무리해요. 밥을 곁들이면 한 끼로 즐길 수 있어요."
+            ],
+            "tip": "소금·간장 대신 양파와 표고버섯의 감칠맛을 먼저 활용해요. 레몬즙과 들깨가루를 조금 곁들여 풍미를 더하고, 양념은 마지막에 소량만 넣어요.",
+            "protein_pairing": "닭고기",
+            "image": null,
+            "supplemental": true
+          }
+        ]
+      },
+      {
+        "month": 4,
+        "ingredients": [
+          "달래",
+          "미나리",
+          "쑥",
+          "두릅",
+          "양배추"
+        ],
+        "climate": "봄나물의 향을 살려 양념을 적게 써도 맛있는 식탁을 만들어요.",
+        "recipes": [
+          {
+            "id": "supplement-4-1",
+            "name": "미나리 달래 달걀찜",
+            "category": "일품",
+            "method": "찌기",
+            "main_ingredients": [
+              "미나리",
+              "달래",
+              "달걀"
+            ],
+            "seasonal": [
+              "미나리",
+              "달래"
+            ],
+            "months": [
+              4
+            ],
+            "ingredients_text": "2인분 제안: 미나리 150g, 달래 80g, 달걀 200g, 양파 50g, 표고버섯 20g, 물 적당량, 레몬즙 또는 들깨가루 소량",
+            "steps": [
+              "채소를 씻어 잘게 썰고, 달걀은 깨서 고루 풀어요.",
+              "푼 달걀에 물 150ml와 채소를 섞어 내열 그릇에 담고 찜기에 넣어 익혀요.",
+              "달걀은 흰자와 노른자가 완전히 굳을 때까지 익혀요.",
+              "그릇에 담고 향과 감칠맛을 살려 마무리해요. 밥을 곁들이면 한 끼로 즐길 수 있어요."
+            ],
+            "tip": "소금·간장 대신 양파와 표고버섯의 감칠맛을 먼저 활용해요. 레몬즙과 들깨가루를 조금 곁들여 풍미를 더하고, 양념은 마지막에 소량만 넣어요.",
+            "protein_pairing": "달걀",
+            "image": null,
+            "supplemental": true
+          },
+          {
+            "id": "supplement-4-2",
+            "name": "두릅 양배추 두부구이",
+            "category": "일품",
+            "method": "굽기",
+            "main_ingredients": [
+              "두릅",
+              "양배추",
+              "두부"
+            ],
+            "seasonal": [
+              "두릅",
+              "양배추"
+            ],
+            "months": [
+              4
+            ],
+            "ingredients_text": "2인분 제안: 두릅 150g, 양배추 80g, 두부 200g, 양파 50g, 표고버섯 20g, 물 적당량, 레몬즙 또는 들깨가루 소량, 식용유 1작은술",
+            "steps": [
+              "채소를 씻어 한입 크기로 썰고 단백질 재료를 손질해요.",
+              "팬에 식용유를 조금 두르고 재료를 넣어 타지 않게 뒤집거나 저으며 익혀요.",
+              "두부와 채소가 고루 익으면 불을 꺼요.",
+              "그릇에 담고 향과 감칠맛을 살려 마무리해요. 밥을 곁들이면 한 끼로 즐길 수 있어요."
+            ],
+            "tip": "소금·간장 대신 양파와 표고버섯의 감칠맛을 먼저 활용해요. 레몬즙과 들깨가루를 조금 곁들여 풍미를 더하고, 양념은 마지막에 소량만 넣어요.",
+            "protein_pairing": "두부",
+            "image": null,
+            "supplemental": true
+          }
+        ]
+      },
+      {
+        "month": 5,
+        "ingredients": [
+          "상추",
+          "오이",
+          "마늘",
+          "두릅",
+          "토마토"
+        ],
+        "climate": "초여름으로 넘어가는 때, 채소와 단백질을 고루 곁들여요.",
+        "recipes": [
+          {
+            "id": "supplement-5-1",
+            "name": "마늘 두부구이와 상추쌈",
+            "category": "일품",
+            "method": "굽기",
+            "main_ingredients": [
+              "마늘",
+              "상추",
+              "두부"
+            ],
+            "seasonal": [
+              "마늘",
+              "상추"
+            ],
+            "months": [
+              5
+            ],
+            "ingredients_text": "2인분 제안: 마늘 150g, 상추 80g, 두부 200g, 양파 50g, 표고버섯 20g, 물 적당량, 레몬즙 또는 들깨가루 소량, 식용유 1작은술",
+            "steps": [
+              "채소를 씻어 한입 크기로 썰고 단백질 재료를 손질해요.",
+              "팬에 식용유를 조금 두르고 재료를 넣어 타지 않게 뒤집거나 저으며 익혀요.",
+              "두부와 채소가 고루 익으면 불을 꺼요.",
+              "그릇에 담고 향과 감칠맛을 살려 마무리해요. 밥을 곁들이면 한 끼로 즐길 수 있어요."
+            ],
+            "tip": "소금·간장 대신 양파와 표고버섯의 감칠맛을 먼저 활용해요. 레몬즙과 들깨가루를 조금 곁들여 풍미를 더하고, 양념은 마지막에 소량만 넣어요.",
+            "protein_pairing": "두부",
+            "image": null,
+            "supplemental": true
+          },
+          {
+            "id": "supplement-5-2",
+            "name": "오이 토마토 닭고기볶음",
+            "category": "일품",
+            "method": "볶기",
+            "main_ingredients": [
+              "오이",
+              "토마토",
+              "닭고기"
+            ],
+            "seasonal": [
+              "오이",
+              "토마토"
+            ],
+            "months": [
+              5
+            ],
+            "ingredients_text": "2인분 제안: 오이 150g, 토마토 80g, 닭고기 200g, 양파 50g, 표고버섯 20g, 물 적당량, 레몬즙 또는 들깨가루 소량, 식용유 1작은술",
+            "steps": [
+              "채소를 씻어 한입 크기로 썰고 단백질 재료를 손질해요.",
+              "팬에 식용유를 조금 두르고 재료를 넣어 타지 않게 뒤집거나 저으며 익혀요.",
+              "닭고기는 중심까지 완전히 익혀요.",
+              "그릇에 담고 향과 감칠맛을 살려 마무리해요. 밥을 곁들이면 한 끼로 즐길 수 있어요."
+            ],
+            "tip": "소금·간장 대신 양파와 표고버섯의 감칠맛을 먼저 활용해요. 과일·채소의 즙과 향으로 맛을 더하고, 양념은 마지막에 소량만 넣어요.",
+            "protein_pairing": "닭고기",
+            "image": null,
+            "supplemental": true
+          }
+        ]
+      },
+      {
+        "month": 6,
+        "ingredients": [
+          "감자",
+          "양파",
+          "오이",
+          "토마토",
+          "가지"
+        ],
+        "climate": "더워지는 날씨에는 수분이 많은 채소와 담백한 단백질을 함께 즐겨요.",
+        "recipes": [
+          {
+            "id": "supplement-6-1",
+            "name": "감자 양파 두부국",
+            "category": "일품",
+            "method": "끓이기",
+            "main_ingredients": [
+              "감자",
+              "양파",
+              "두부"
+            ],
+            "seasonal": [
+              "감자",
+              "양파"
+            ],
+            "months": [
+              6
+            ],
+            "ingredients_text": "2인분 제안: 감자 150g, 양파 80g, 두부 200g, 양파 50g, 표고버섯 20g, 물 적당량, 레몬즙 또는 들깨가루 소량",
+            "steps": [
+              "채소를 씻어 한입 크기로 썰고 단백질 재료를 손질해요.",
+              "물에 양파와 표고버섯을 넣고 끓인 뒤 주재료를 넣어 익혀요.",
+              "두부와 채소가 고루 익으면 불을 꺼요.",
+              "그릇에 담고 향과 감칠맛을 살려 마무리해요. 밥을 곁들이면 한 끼로 즐길 수 있어요."
+            ],
+            "tip": "소금·간장 대신 양파와 표고버섯의 감칠맛을 먼저 활용해요. 레몬즙과 들깨가루를 조금 곁들여 풍미를 더하고, 양념은 마지막에 소량만 넣어요.",
+            "protein_pairing": "두부",
+            "image": null,
+            "supplemental": true
+          },
+          {
+            "id": "supplement-6-2",
+            "name": "토마토 가지 달걀볶음",
+            "category": "일품",
+            "method": "볶기",
+            "main_ingredients": [
+              "토마토",
+              "가지",
+              "달걀"
+            ],
+            "seasonal": [
+              "토마토",
+              "가지"
+            ],
+            "months": [
+              6
+            ],
+            "ingredients_text": "2인분 제안: 토마토 150g, 가지 80g, 달걀 200g, 양파 50g, 표고버섯 20g, 물 적당량, 레몬즙 또는 들깨가루 소량, 식용유 1작은술",
+            "steps": [
+              "채소를 씻어 잘게 썰고, 달걀은 깨서 고루 풀어요.",
+              "팬에 식용유를 조금 두르고 재료를 넣어 타지 않게 뒤집거나 저으며 익혀요.",
+              "달걀은 흰자와 노른자가 완전히 굳을 때까지 익혀요.",
+              "그릇에 담고 향과 감칠맛을 살려 마무리해요. 밥을 곁들이면 한 끼로 즐길 수 있어요."
+            ],
+            "tip": "소금·간장 대신 양파와 표고버섯의 감칠맛을 먼저 활용해요. 과일·채소의 즙과 향으로 맛을 더하고, 양념은 마지막에 소량만 넣어요.",
+            "protein_pairing": "달걀",
+            "image": null,
+            "supplemental": true
+          }
+        ]
+      },
+      {
+        "month": 7,
+        "ingredients": [
+          "애호박",
+          "오이",
+          "열무",
+          "수박",
+          "토마토"
+        ],
+        "climate": "덥고 습한 여름에는 수분이 많은 채소를 활용해 가볍게 차려요.",
+        "recipes": [
+          {
+            "id": "supplement-7-1",
+            "name": "애호박 토마토 두부찜",
+            "category": "일품",
+            "method": "찌기",
+            "main_ingredients": [
+              "애호박",
+              "토마토",
+              "두부"
+            ],
+            "seasonal": [
+              "애호박",
+              "토마토"
+            ],
+            "months": [
+              7
+            ],
+            "ingredients_text": "2인분 제안: 애호박 150g, 토마토 80g, 두부 200g, 양파 50g, 표고버섯 20g, 물 적당량, 레몬즙 또는 들깨가루 소량",
+            "steps": [
+              "채소를 씻어 한입 크기로 썰고 단백질 재료를 손질해요.",
+              "내열 그릇에 손질한 재료와 물을 조금 담아 찜기에 넣고 속까지 익혀요.",
+              "두부와 채소가 고루 익으면 불을 꺼요.",
+              "그릇에 담고 향과 감칠맛을 살려 마무리해요. 밥을 곁들이면 한 끼로 즐길 수 있어요."
+            ],
+            "tip": "소금·간장 대신 양파와 표고버섯의 감칠맛을 먼저 활용해요. 과일·채소의 즙과 향으로 맛을 더하고, 양념은 마지막에 소량만 넣어요.",
+            "protein_pairing": "두부",
+            "image": null,
+            "supplemental": true
+          },
+          {
+            "id": "supplement-7-2",
+            "name": "오이 닭고기볶음",
+            "category": "일품",
+            "method": "볶기",
+            "main_ingredients": [
+              "오이",
+              "닭고기"
+            ],
+            "seasonal": [
+              "오이"
+            ],
+            "months": [
+              7
+            ],
+            "ingredients_text": "2인분 제안: 오이 150g, 닭고기 200g, 양파 50g, 표고버섯 20g, 물 적당량, 레몬즙 또는 들깨가루 소량, 식용유 1작은술",
+            "steps": [
+              "채소를 씻어 한입 크기로 썰고 단백질 재료를 손질해요.",
+              "팬에 식용유를 조금 두르고 재료를 넣어 타지 않게 뒤집거나 저으며 익혀요.",
+              "닭고기는 중심까지 완전히 익혀요.",
+              "그릇에 담고 향과 감칠맛을 살려 마무리해요. 밥을 곁들이면 한 끼로 즐길 수 있어요."
+            ],
+            "tip": "소금·간장 대신 양파와 표고버섯의 감칠맛을 먼저 활용해요. 레몬즙과 들깨가루를 조금 곁들여 풍미를 더하고, 양념은 마지막에 소량만 넣어요.",
+            "protein_pairing": "닭고기",
+            "image": null,
+            "supplemental": true
+          }
+        ]
+      },
+      {
+        "month": 8,
+        "ingredients": [
+          "가지",
+          "옥수수",
+          "단호박",
+          "오이",
+          "토마토"
+        ],
+        "climate": "늦여름에는 제철 채소의 수분과 자연스러운 단맛을 살려요.",
+        "recipes": [
+          {
+            "id": "supplement-8-1",
+            "name": "단호박 옥수수 달걀찜",
+            "category": "일품",
+            "method": "찌기",
+            "main_ingredients": [
+              "단호박",
+              "옥수수",
+              "달걀"
+            ],
+            "seasonal": [
+              "단호박",
+              "옥수수"
+            ],
+            "months": [
+              8
+            ],
+            "ingredients_text": "2인분 제안: 단호박 150g, 옥수수 80g, 달걀 200g, 양파 50g, 표고버섯 20g, 물 적당량, 레몬즙 또는 들깨가루 소량",
+            "steps": [
+              "채소를 씻어 잘게 썰고, 달걀은 깨서 고루 풀어요.",
+              "푼 달걀에 물 150ml와 채소를 섞어 내열 그릇에 담고 찜기에 넣어 익혀요.",
+              "달걀은 흰자와 노른자가 완전히 굳을 때까지 익혀요.",
+              "그릇에 담고 향과 감칠맛을 살려 마무리해요. 밥을 곁들이면 한 끼로 즐길 수 있어요."
+            ],
+            "tip": "소금·간장 대신 양파와 표고버섯의 감칠맛을 먼저 활용해요. 레몬즙과 들깨가루를 조금 곁들여 풍미를 더하고, 양념은 마지막에 소량만 넣어요.",
+            "protein_pairing": "달걀",
+            "image": null,
+            "supplemental": true
+          },
+          {
+            "id": "supplement-8-2",
+            "name": "가지 토마토 두부구이",
+            "category": "일품",
+            "method": "굽기",
+            "main_ingredients": [
+              "가지",
+              "토마토",
+              "두부"
+            ],
+            "seasonal": [
+              "가지",
+              "토마토"
+            ],
+            "months": [
+              8
+            ],
+            "ingredients_text": "2인분 제안: 가지 150g, 토마토 80g, 두부 200g, 양파 50g, 표고버섯 20g, 물 적당량, 레몬즙 또는 들깨가루 소량, 식용유 1작은술",
+            "steps": [
+              "채소를 씻어 한입 크기로 썰고 단백질 재료를 손질해요.",
+              "팬에 식용유를 조금 두르고 재료를 넣어 타지 않게 뒤집거나 저으며 익혀요.",
+              "두부와 채소가 고루 익으면 불을 꺼요.",
+              "그릇에 담고 향과 감칠맛을 살려 마무리해요. 밥을 곁들이면 한 끼로 즐길 수 있어요."
+            ],
+            "tip": "소금·간장 대신 양파와 표고버섯의 감칠맛을 먼저 활용해요. 과일·채소의 즙과 향으로 맛을 더하고, 양념은 마지막에 소량만 넣어요.",
+            "protein_pairing": "두부",
+            "image": null,
+            "supplemental": true
+          }
+        ]
+      },
+      {
+        "month": 9,
+        "ingredients": [
+          "표고버섯",
+          "팽이버섯",
+          "고구마",
+          "배",
+          "무화과"
+        ],
+        "climate": "가을로 접어들면 버섯의 감칠맛과 뿌리채소를 함께 즐겨요.",
+        "recipes": [
+          {
+            "id": "supplement-9-1",
+            "name": "표고 팽이버섯 두부국",
+            "category": "일품",
+            "method": "끓이기",
+            "main_ingredients": [
+              "표고버섯",
+              "팽이버섯",
+              "두부"
+            ],
+            "seasonal": [
+              "표고버섯",
+              "팽이버섯"
+            ],
+            "months": [
+              9
+            ],
+            "ingredients_text": "2인분 제안: 표고버섯 150g, 팽이버섯 80g, 두부 200g, 양파 50g, 표고버섯 20g, 물 적당량, 레몬즙 또는 들깨가루 소량",
+            "steps": [
+              "채소를 씻어 한입 크기로 썰고 단백질 재료를 손질해요.",
+              "물에 양파와 표고버섯을 넣고 끓인 뒤 주재료를 넣어 익혀요.",
+              "두부와 채소가 고루 익으면 불을 꺼요.",
+              "그릇에 담고 향과 감칠맛을 살려 마무리해요. 밥을 곁들이면 한 끼로 즐길 수 있어요."
+            ],
+            "tip": "소금·간장 대신 양파와 표고버섯의 감칠맛을 먼저 활용해요. 레몬즙과 들깨가루를 조금 곁들여 풍미를 더하고, 양념은 마지막에 소량만 넣어요.",
+            "protein_pairing": "두부",
+            "image": null,
+            "supplemental": true
+          },
+          {
+            "id": "supplement-9-2",
+            "name": "고구마 표고 닭고기찜",
+            "category": "일품",
+            "method": "찌기",
+            "main_ingredients": [
+              "고구마",
+              "표고버섯",
+              "닭고기"
+            ],
+            "seasonal": [
+              "고구마",
+              "표고버섯"
+            ],
+            "months": [
+              9
+            ],
+            "ingredients_text": "2인분 제안: 고구마 150g, 표고버섯 80g, 닭고기 200g, 양파 50g, 표고버섯 20g, 물 적당량, 레몬즙 또는 들깨가루 소량",
+            "steps": [
+              "채소를 씻어 한입 크기로 썰고 단백질 재료를 손질해요.",
+              "내열 그릇에 손질한 재료와 물을 조금 담아 찜기에 넣고 속까지 익혀요.",
+              "닭고기는 중심까지 완전히 익혀요.",
+              "그릇에 담고 향과 감칠맛을 살려 마무리해요. 밥을 곁들이면 한 끼로 즐길 수 있어요."
+            ],
+            "tip": "소금·간장 대신 양파와 표고버섯의 감칠맛을 먼저 활용해요. 레몬즙과 들깨가루를 조금 곁들여 풍미를 더하고, 양념은 마지막에 소량만 넣어요.",
+            "protein_pairing": "닭고기",
+            "image": null,
+            "supplemental": true
+          }
+        ]
+      },
+      {
+        "month": 10,
+        "ingredients": [
+          "연근",
+          "배",
+          "생강",
+          "호박",
+          "고구마"
+        ],
+        "climate": "선선한 가을에는 뿌리채소와 과일의 단맛으로 양념을 덜어내요.",
+        "recipes": [
+          {
+            "id": "supplement-10-1",
+            "name": "연근 배 닭고기찜",
+            "category": "일품",
+            "method": "찌기",
+            "main_ingredients": [
+              "연근",
+              "배",
+              "닭고기"
+            ],
+            "seasonal": [
+              "연근",
+              "배"
+            ],
+            "months": [
+              10
+            ],
+            "ingredients_text": "2인분 제안: 연근 150g, 배 80g, 닭고기 200g, 양파 50g, 표고버섯 20g, 물 적당량, 레몬즙 또는 들깨가루 소량",
+            "steps": [
+              "채소를 씻어 한입 크기로 썰고 단백질 재료를 손질해요.",
+              "내열 그릇에 손질한 재료와 물을 조금 담아 찜기에 넣고 속까지 익혀요.",
+              "닭고기는 중심까지 완전히 익혀요.",
+              "그릇에 담고 향과 감칠맛을 살려 마무리해요. 밥을 곁들이면 한 끼로 즐길 수 있어요."
+            ],
+            "tip": "소금·간장 대신 양파와 표고버섯의 감칠맛을 먼저 활용해요. 과일·채소의 즙과 향으로 맛을 더하고, 양념은 마지막에 소량만 넣어요.",
+            "protein_pairing": "닭고기",
+            "image": null,
+            "supplemental": true
+          },
+          {
+            "id": "supplement-10-2",
+            "name": "호박 생강 두부국",
+            "category": "일품",
+            "method": "끓이기",
+            "main_ingredients": [
+              "호박",
+              "생강",
+              "두부"
+            ],
+            "seasonal": [
+              "호박",
+              "생강"
+            ],
+            "months": [
+              10
+            ],
+            "ingredients_text": "2인분 제안: 호박 150g, 생강 80g, 두부 200g, 양파 50g, 표고버섯 20g, 물 적당량, 레몬즙 또는 들깨가루 소량",
+            "steps": [
+              "채소를 씻어 한입 크기로 썰고 단백질 재료를 손질해요.",
+              "물에 양파와 표고버섯을 넣고 끓인 뒤 주재료를 넣어 익혀요.",
+              "두부와 채소가 고루 익으면 불을 꺼요.",
+              "그릇에 담고 향과 감칠맛을 살려 마무리해요. 밥을 곁들이면 한 끼로 즐길 수 있어요."
+            ],
+            "tip": "소금·간장 대신 양파와 표고버섯의 감칠맛을 먼저 활용해요. 레몬즙과 들깨가루를 조금 곁들여 풍미를 더하고, 양념은 마지막에 소량만 넣어요.",
+            "protein_pairing": "두부",
+            "image": null,
+            "supplemental": true
+          }
+        ]
+      },
+      {
+        "month": 11,
+        "ingredients": [
+          "무",
+          "배추",
+          "사과",
+          "유자",
+          "브로콜리"
+        ],
+        "climate": "초겨울에는 배추와 무를 따뜻하게 익히고 유자 향을 곁들여요.",
+        "recipes": [
+          {
+            "id": "supplement-11-1",
+            "name": "무 배추 두부국",
+            "category": "일품",
+            "method": "끓이기",
+            "main_ingredients": [
+              "무",
+              "배추",
+              "두부"
+            ],
+            "seasonal": [
+              "무",
+              "배추"
+            ],
+            "months": [
+              11
+            ],
+            "ingredients_text": "2인분 제안: 무 150g, 배추 80g, 두부 200g, 양파 50g, 표고버섯 20g, 물 적당량, 레몬즙 또는 들깨가루 소량",
+            "steps": [
+              "채소를 씻어 한입 크기로 썰고 단백질 재료를 손질해요.",
+              "물에 양파와 표고버섯을 넣고 끓인 뒤 주재료를 넣어 익혀요.",
+              "두부와 채소가 고루 익으면 불을 꺼요.",
+              "그릇에 담고 향과 감칠맛을 살려 마무리해요. 밥을 곁들이면 한 끼로 즐길 수 있어요."
+            ],
+            "tip": "소금·간장 대신 양파와 표고버섯의 감칠맛을 먼저 활용해요. 레몬즙과 들깨가루를 조금 곁들여 풍미를 더하고, 양념은 마지막에 소량만 넣어요.",
+            "protein_pairing": "두부",
+            "image": null,
+            "supplemental": true
+          },
+          {
+            "id": "supplement-11-2",
+            "name": "유자 브로콜리 닭고기구이",
+            "category": "일품",
+            "method": "굽기",
+            "main_ingredients": [
+              "유자",
+              "브로콜리",
+              "닭고기"
+            ],
+            "seasonal": [
+              "유자",
+              "브로콜리"
+            ],
+            "months": [
+              11
+            ],
+            "ingredients_text": "2인분 제안: 유자 150g, 브로콜리 80g, 닭고기 200g, 양파 50g, 표고버섯 20g, 물 적당량, 레몬즙 또는 들깨가루 소량, 식용유 1작은술",
+            "steps": [
+              "채소를 씻어 한입 크기로 썰고 단백질 재료를 손질해요.",
+              "팬에 식용유를 조금 두르고 재료를 넣어 타지 않게 뒤집거나 저으며 익혀요.",
+              "닭고기는 중심까지 완전히 익혀요.",
+              "그릇에 담고 향과 감칠맛을 살려 마무리해요. 밥을 곁들이면 한 끼로 즐길 수 있어요."
+            ],
+            "tip": "소금·간장 대신 양파와 표고버섯의 감칠맛을 먼저 활용해요. 과일·채소의 즙과 향으로 맛을 더하고, 양념은 마지막에 소량만 넣어요.",
+            "protein_pairing": "닭고기",
+            "image": null,
+            "supplemental": true
+          }
+        ]
+      },
+      {
+        "month": 12,
+        "ingredients": [
+          "무",
+          "배추",
+          "브로콜리",
+          "시금치",
+          "감귤"
+        ],
+        "climate": "제주 월동채소와 감귤의 풍미로 겨울 식탁을 따뜻하게 차려요.",
+        "recipes": [
+          {
+            "id": "supplement-12-1",
+            "name": "배추 무 닭고기찜",
+            "category": "일품",
+            "method": "찌기",
+            "main_ingredients": [
+              "배추",
+              "무",
+              "닭고기"
+            ],
+            "seasonal": [
+              "배추",
+              "무"
+            ],
+            "months": [
+              12
+            ],
+            "ingredients_text": "2인분 제안: 배추 150g, 무 80g, 닭고기 200g, 양파 50g, 표고버섯 20g, 물 적당량, 레몬즙 또는 들깨가루 소량",
+            "steps": [
+              "채소를 씻어 한입 크기로 썰고 단백질 재료를 손질해요.",
+              "내열 그릇에 손질한 재료와 물을 조금 담아 찜기에 넣고 속까지 익혀요.",
+              "닭고기는 중심까지 완전히 익혀요.",
+              "그릇에 담고 향과 감칠맛을 살려 마무리해요. 밥을 곁들이면 한 끼로 즐길 수 있어요."
+            ],
+            "tip": "소금·간장 대신 양파와 표고버섯의 감칠맛을 먼저 활용해요. 레몬즙과 들깨가루를 조금 곁들여 풍미를 더하고, 양념은 마지막에 소량만 넣어요.",
+            "protein_pairing": "닭고기",
+            "image": null,
+            "supplemental": true
+          },
+          {
+            "id": "supplement-12-2",
+            "name": "감귤 브로콜리 두부구이",
+            "category": "일품",
+            "method": "굽기",
+            "main_ingredients": [
+              "감귤",
+              "브로콜리",
+              "두부"
+            ],
+            "seasonal": [
+              "감귤",
+              "브로콜리"
+            ],
+            "months": [
+              12
+            ],
+            "ingredients_text": "2인분 제안: 감귤 150g, 브로콜리 80g, 두부 200g, 양파 50g, 표고버섯 20g, 물 적당량, 레몬즙 또는 들깨가루 소량, 식용유 1작은술",
+            "steps": [
+              "채소를 씻어 한입 크기로 썰고 단백질 재료를 손질해요.",
+              "팬에 식용유를 조금 두르고 재료를 넣어 타지 않게 뒤집거나 저으며 익혀요.",
+              "두부와 채소가 고루 익으면 불을 꺼요.",
+              "그릇에 담고 향과 감칠맛을 살려 마무리해요. 밥을 곁들이면 한 끼로 즐길 수 있어요."
+            ],
+            "tip": "소금·간장 대신 양파와 표고버섯의 감칠맛을 먼저 활용해요. 과일·채소의 즙과 향으로 맛을 더하고, 양념은 마지막에 소량만 넣어요.",
+            "protein_pairing": "두부",
+            "image": null,
+            "supplemental": true
+          }
+        ]
+      }
+    ]
+  }
 }
